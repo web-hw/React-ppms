@@ -1,0 +1,25 @@
+.menus {
+  padding-top: 42px;
+}
+
+.wrapper-tbody {
+  td:last-child span {
+    cursor: pointer;
+    color: #1262b7;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0
+    }
+  }
+}
+
+.edit-menu-modal {
+  :global {
+    .ant-tree-node-content-wrapper {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

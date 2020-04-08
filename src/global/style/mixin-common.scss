@@ -1,0 +1,26 @@
+/*****************PC | mobile 全局宏部分*****************/
+
+// 多行溢出 配合line-height max-height使用
+@mixin tes-line($line) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  word-break: break-all;
+  white-space: normal;
+}
+
+// 背景图片统一处理
+@mixin bg-img {
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+// margin left reset first-item
+@mixin ml-no-first($px) {
+  margin-left: #{$px}px !important;
+  &:first-child {
+    margin-left: 0 !important;
+  }
+}

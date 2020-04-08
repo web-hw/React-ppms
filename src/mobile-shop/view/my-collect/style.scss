@@ -1,0 +1,24 @@
+.my-collect {
+  padding-top: 55px;
+
+  :global {
+    .search {
+      width: 100%;
+      height: 55px;
+      padding: 12.5px 10px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom: 1px solid #eee;
+      .am-search {
+        background-color: transparent !important;
+      }
+
+      .am-search-cancel {
+        color: #fff;
+        background-color: #fb3f3e;
+      }
+    }
+  }
+}

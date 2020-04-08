@@ -1,0 +1,15 @@
+.stranger {
+  padding-top: 60px;
+
+  :global {
+    .search {
+      height: 60px;
+      padding: 15px 10px;
+      background-color: transparent !important;
+
+      .am-search {
+        background-color: transparent !important;
+      }
+    }
+  }
+}

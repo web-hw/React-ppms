@@ -1,0 +1,179 @@
+.expert-person {
+  :global {
+    .cb-header {
+      background-color: transparent !important;
+      border-bottom-color: transparent !important;
+    }
+  }
+}
+.expert-person-banner {
+  min-height: 130px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.expert-person-head {
+  border-top: 1px solid transparent;
+  margin-top: -25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  :global {
+    .head {
+      width: 90px;
+      height: 90px;
+      margin: -45px auto;
+      @include bg-img;
+
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+    }
+
+    p.expert-desc {
+      max-width: 100%;
+      padding: 5.5px 30px 5.5px 0;
+      height: 27px;
+
+      em {
+        width: 15px;
+        @include bg-img;
+        background-size: 100% auto !important;
+      }
+    }
+  }
+
+  h6 {
+    padding: 7.5px 0 5.5px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #1a1a1a;
+  }
+
+  p {
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    color: #666;
+  }
+}
+
+.expert-person-ope {
+
+  :global {
+    .am-grid-item-content {
+      padding: 10px !important;
+      box-sizing: border-box;
+      min-height: 70px;
+    }
+
+    .ope-item {
+      height: 50px;
+
+      img {
+        width: auto;
+        height: 25px;
+      }
+
+      span {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 16px;
+        height: 16px;
+        color: #333;
+      }
+    }
+  }
+}
+
+.expert-pla {
+  height: 10px;
+}
+
+.expert-modal {
+  :global {
+    .am-modal-content {
+      background-color: transparent !important;
+      padding: 0 15px 10px !important;
+      box-sizing: border-box;
+    }
+
+    .am-modal-body {
+      width: 100%;
+      height: auto !important;
+    }
+
+    .expert-select-head,
+    .expert-select-cancel,
+    .expert-desc-modal {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .expert-desc-modal {
+      .am-textarea-item {
+        padding: 10px 15px 30px 15px !important;
+        border: 1px solid #eee;
+      }
+
+      textarea {
+        font-size: 12px !important;
+        height: 60px !important;
+        line-height: 20px !important;
+        color: #333 !important;
+      }
+
+      .am-textarea-control {
+        padding: 0 !important;
+      }
+
+      .am-textarea-count {
+        font-size: 12px !important;
+        height: 15px !important;
+        line-height: 15px !important;
+        bottom: 10px !important;
+        right: 15px !important;
+      }
+
+      .expert-desc-ope {
+        span {
+          display: inline-block;
+          vertical-align: top;
+          width: 50%;
+          height: 30px;
+          line-height: 30px;
+          font-size: 15px;
+          color: #333;
+          text-align: center;
+
+          &:last-child {
+            color: #fb3f3e;
+          }
+        }
+      }
+    }
+
+    .expert-select-item {
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid #ccc;
+      font-size: 15px;
+      color: #333;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+    }
+
+    .expert-select-info {
+      font-size: 12px;
+      color: #999;
+    }
+  }
+}

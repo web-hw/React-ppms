@@ -1,0 +1,15 @@
+.item {
+  padding-left: 120px !important;
+}
+
+.assign-group {
+  :global {
+    .cb-header {
+      .am-button {
+        background-color: #fb3f3e !important;
+        border-color: transparent !important;
+        color: #fff !important;
+      }
+    }
+  }
+}

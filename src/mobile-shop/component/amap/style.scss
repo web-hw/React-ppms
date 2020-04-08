@@ -1,0 +1,13 @@
+.cb-amap {
+  :global {
+    .amap-logo {
+      right: 10px !important;
+      left: auto !important;
+      bottom: 5px !important;
+    }
+
+    .amap-copyright {
+      visibility: hidden !important;
+    }
+  }
+}

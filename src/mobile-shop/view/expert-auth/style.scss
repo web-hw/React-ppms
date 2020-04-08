@@ -1,0 +1,141 @@
+.auth-expert {
+
+  :global {
+    .auth-info-expert {
+      height: 30px;
+      line-height: 30px;
+      background-color: #b3b3b3;
+      font-size: 12px;
+	    color: #ffffff;
+    }
+
+    .cb-input {
+      margin-top: 0 !important;
+      padding: 0 10px;
+
+      .am-input-label,
+      input {
+        height: 42px !important;
+        line-height: 42px !important;
+        border: 0 !important;
+      }
+
+      input {
+        padding-right: 28px !important;
+      }
+
+      .am-input-label {
+        // width: 85px !important;
+        width: 75px !important;
+      }
+
+      .am-list-line {
+        border-bottom: 1px solid #f0f0f0 !important;
+
+        &::after {
+          display: none !important;
+        }
+      }
+
+      .am-input-extra {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 18px;
+        overflow: visible !important;
+
+        .am-icon {
+          color: #ccc !important;
+          position: absolute;
+          top: 10px;
+          right: -2px;
+        }
+      }
+    }
+
+    .select-file>div {
+      width: 173px;
+      height: 110px;
+      background-color: #f5f5f5;
+
+      @include bg-img;
+    }
+
+    .select-file .mc {
+      width: 90px;
+      font-size: 12px;
+      line-height: 14px;
+      color: #999;
+      text-align: center;
+    }
+
+    .cb-no-border-input {
+      .am-list-line {
+        border-bottom: 0 !important;
+      }
+    }
+
+    .select-file .mc img {
+      display: block;
+      height: 14px;
+      width: auto;
+      margin: 0 auto 15px;
+    }
+
+    .auth-cb-input {
+      padding: 0 5px !important;
+
+      .am-input-item {
+        padding: 0 5px !important;
+      }
+    }
+
+    .select-certificate {
+      margin-top: -5px;
+      padding-bottom: 5px;
+      .select-cert-itm {
+        background-color: #f5f5f5;
+
+        @include bg-img;
+      }
+
+      .am-grid-item-content {
+        padding: 5px !important;
+        box-sizing: border-box;
+      }
+
+      .mc img {
+        height: 14px;
+        width: auto;
+      }
+    }
+
+    .auth-btn .am-button {
+      height: 50px !important;
+      line-height: 50px !important;
+      background-color: #ff4d00 !important;
+      border: 0 !important;
+      font-size: 15px !important;
+	    color: #fff !important;
+    }
+  }
+}
+
+.trade-modal {
+  :global {
+    .am-modal-header,
+    .am-modal-title {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #333;
+      padding: 0;
+    }
+  }
+}
+
+.trade-modal-content {
+  max-height: 230px;
+}

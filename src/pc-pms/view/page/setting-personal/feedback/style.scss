@@ -1,0 +1,13 @@
+.feedback {
+
+  :global {
+    .content {
+      width: 800px;
+    }
+
+    textarea.ant-input {
+      height: 115px !important;
+      margin-bottom: 0;
+    }
+  }
+}

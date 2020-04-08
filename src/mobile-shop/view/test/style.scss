@@ -1,0 +1,7 @@
+.test {
+  width: 50px;
+  line-height: 20px;
+  max-height: 40px;
+  @include bg-img;
+  // background-image: url('../../assets/images/test.jpg')
+}

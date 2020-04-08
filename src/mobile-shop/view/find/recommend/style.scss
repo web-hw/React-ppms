@@ -1,0 +1,30 @@
+.recommend {
+  // background-color: blue
+}
+.rcmd-item {
+  :global {
+    .desc {
+      margin: 8px 0;
+      line-height: 26px;
+      max-height: 26 * 4px;
+      color: #333;
+      @include tes-line(4)
+    }
+    .footer {
+      height: 32px;
+      line-height: 32px;
+      color: #e4e4e4;
+      em {
+        @include bg-img;
+        width: 14px;
+        height: 10px;
+        margin-top: 10.5px;
+      }
+      .fr {
+        width: 16px;
+        height: 14px;
+        margin-top: 9px;
+      }
+    }
+  }
+}

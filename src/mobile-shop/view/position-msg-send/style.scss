@@ -1,0 +1,29 @@
+.position-msg-send {
+
+  :global {
+    .content {
+      padding-bottom: 52px;
+    }
+    .target {
+      height: 52px;
+      padding: 6px 50px 6px 10px;
+
+      img {
+        top: 11px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .name,
+    .address {
+      height: 20px;
+      line-height: 20px;
+      color: #666;
+    }
+    .name {
+      color: #333;
+      font-weight: bold;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.image {
+  display: inline-block;
+  vertical-align: top;
+  // width: auto;
+  // height: auto;
+  font-size: 0;
+  text-align: center;
+  overflow: hidden;
+
+  img {
+    display: inline-block;
+    vertical-align: top;
+  }
+}

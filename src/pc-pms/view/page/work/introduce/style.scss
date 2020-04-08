@@ -1,0 +1,83 @@
+.introduce {
+
+  :global {
+    .wrapper-header {
+      .fl {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+.content {
+  &>div:first-child {
+    padding-left: 160px;
+  }
+
+  :global {
+    .img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 150px;
+      height: 100%;
+    }
+
+    .content {
+      max-height: 14 * 20px;
+      line-height: 20px;
+      color: #333;
+      @include tes-line(14);
+    }
+
+    .company {
+      height: 100px;
+
+      .content {
+        max-height: 5 * 20px;
+        @include tes-line(5);
+      }
+    }
+
+    .amap {
+      height: 185px;
+
+      #amap {
+        overflow: hidden;
+        border-radius: 2px;
+      }
+
+      .amap-logo {
+        right: 10px !important;
+        left: auto !important;
+        bottom: 5px !important;
+      }
+
+      .amap-copyright {
+        visibility: hidden !important;
+      }
+
+      .amap-marker-label {
+        border: 1px solid transparent !important;
+        background-color: transparent !important;
+
+        .amap-address-info {
+          padding: 5px 10px;
+          max-width: 280px;
+          background-color:rgba(201, 228, 222, .8);
+
+          div {
+            font-size: 12px;
+            text-decoration: underline;
+            color:#666;
+            height: 20px;
+            line-height: 20px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.footer {
+  height: 50px;
+  // box-shadow: 0 -1px 8px #aaa;
+  // background-color: #f8f8f8;
+  box-shadow: 0 -1px 5px #eee;
+  background-color: #fff;
+
+  img,
+  :global(.am-badge) {
+    height: 21px;
+    width: auto;
+  }
+  span {
+    height: 22px;
+    line-height: 22px;
+    color: #a5a5a5;
+    &:global(.active) {
+      color: #fb3f3e;
+    }
+  }
+  :global {
+    .am-flexbox-item {
+      margin-left: 0 !important;
+    }
+    .am-badge {
+      margin-top: 5px;
+    }
+    .am-badge-dot,
+    .am-badge-text {
+      left: 0 !important;
+      background-color: #fb3f3e !important;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.not-found,
+.err-page {
+  :global {
+    .empty-image {
+      margin-bottom: 20px !important;
+      img {
+        width: 150px;
+      }
+    }
+
+    .empty-description {
+      font-size: 20px;
+    }
+  }
+}
+
+.loading-page {
+  background-color: rgba(255, 255, 255, .2);
+}

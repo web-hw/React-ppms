@@ -1,0 +1,42 @@
+.calendar-info {
+  max-width: 100px;
+  max-height: 75px;
+
+  p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.calendar {
+  :global {
+    .ant-fullcalendar-tbody {
+      td:not(.ant-fullcalendar-last-month-cell):not(.ant-fullcalendar-next-month-btn-day) .info-num {
+        color: #2EB398;
+      }
+    }
+
+    .ant-fullcalendar-table {
+      height: 286px !important;
+    }
+
+    .ant-fullcalendar-value {
+      width: 48px !important;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .ant-fullcalendar-calendar-body {
+      padding: 10px 12px 0 !important;
+    }
+    .ant-fullcalendar-column-header {
+      line-height: 38px !important;
+    }
+  }
+}

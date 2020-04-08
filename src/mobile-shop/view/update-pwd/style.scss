@@ -1,0 +1,47 @@
+.update-pwd {
+  :global {
+    .cb-header {
+      .am-navbar-right span {
+        color: #fb3f3e !important;
+      }
+    }
+
+    .cb-input {
+      height: 55px;
+      padding: 12px 0;
+      box-sizing: border-box;
+      border-top: 1px solid #eee;
+      margin-top: 0 !important;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+
+      input {
+        padding: 5px 10px !important;
+        line-height: 18px !important;
+      }
+
+      .am-input-label {
+        width: 90px !important;
+      }
+
+      .am-input-extra {
+        height: 100%;
+
+        span {
+          display: inline-block;
+          vertical-align: top;
+          height: 100%;
+          line-height: 30px;
+          font-size: 12px !important;
+          color: #fb3f3e !important;
+
+          &.valid {
+            color: #666 !important;
+          }
+        }
+      }
+    }
+  }
+}

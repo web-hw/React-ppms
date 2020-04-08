@@ -1,0 +1,58 @@
+.inform {
+  :global {
+    .content {
+      width: 400px;
+    }
+
+    .form-item-sign-btn {
+      margin-bottom: 6px;
+    }
+
+    .form-item-btn {
+      padding-top: 30px;
+      text-align: center;
+    }
+
+    .form-item-sign,
+    .form-item-head {
+      overflow: hidden;
+      box-sizing: border-box;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .form-item-sign {
+      width: 100%;
+      height: 80px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      text-align: center;
+
+      img {
+        width: auto;
+        display: inline-block;
+        vertical-align: top;
+        max-width: 100%;
+      }
+    }
+
+    .form-item-head {
+      // width: 180px;
+      // height: 180px;
+      cursor: pointer;
+      width: 120px;
+      height: 120px;
+      padding: 10px;
+      background-color: #ccc;
+      margin: 0 auto;
+      border-radius: 50%;
+
+      img {
+        border-radius: 50%;
+        width: 100%;
+      }
+    }
+  }
+}

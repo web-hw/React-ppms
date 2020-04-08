@@ -1,0 +1,120 @@
+.my-order {
+  background-color: #fafafa;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+
+    .am-tabs-default-bar-tab {
+      line-height: 50px !important;
+      height: 50px !important;
+      font-size: 14px !important;
+    }
+    .am-tabs-default-bar-tab-active {
+      color: #ff6600 !important;
+      &::after {
+        background-color: #ff6600 !important;
+      }
+    }
+    .model-l-r {
+      width: 12px;
+      height: 50px;
+    }
+  }
+}
+
+.item {
+
+  h6 {
+    height: 36px;
+    background-color: #f7f7f7;
+    span {
+      position: relative;
+      line-height: 36px;
+      height: 36px;
+    }
+
+    :global {
+      .fr {
+        color: #ff6600;
+      }
+
+      .fl {
+        padding-right: 24px;
+      }
+
+      .am-icon {
+        color: #ccc !important;
+        position: absolute;
+        top: 7px;
+        right: 0;
+      }
+    }
+  }
+
+  :global {
+    .item {
+      margin-top: 10px;
+      height: 81px;
+      padding-left: 100px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      .img {
+        width: 90px;
+        border: 1px solid #f0f0f0;
+        @include bg-img;
+        background-size: auto 70px !important;
+      }
+
+      .title {
+        color: #333;
+      }
+      .desc {
+        color: #999;
+      }
+
+      .title, .desc {
+        height: 27px;
+        line-height: 27px;
+      }
+    }
+    .total {
+      color: #333;
+      height: 20px;
+      line-height: 20px;
+    }
+    .btn {
+      height: 50px;
+
+      span {
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        width: 75px;
+        height: 100%;
+        line-height: 23px;
+        border-radius: 12.5px;
+        color: #ff6600;
+        border: 1px solid #ff6600;
+        font-size: 13px;
+        box-sizing: border-box;
+        margin-left: 10px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+      .cancel {
+        color: #999;
+        border-color: #999;
+      }
+    }
+  }
+}

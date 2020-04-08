@@ -1,0 +1,90 @@
+.biding-msg {
+
+  :global {
+    .am-textarea-item {
+      padding: 0 !important;
+    }
+
+    .file-input-name {
+      .am-list-line {
+        padding-right: 32px !important;
+        padding-left: 80px !important;
+      }
+
+      .am-input-extra {
+        right: 0;
+
+        .am-icon {
+          margin-top: 4px;
+          color: #999 !important;
+        }
+      }
+    }
+
+    .file-input-name,
+    .file-input-select {
+      .am-list-line {
+        position: relative;
+      }
+
+      .am-input-extra {
+        position: absolute;
+        top: 0;
+        height: 100%;
+      }
+    }
+
+    .file-input-select {
+      .am-input-extra {
+        left: 80px;
+        overflow: visible;
+      }
+
+      .am-input-control {
+        display: none !important;
+      }
+
+      .am-button {
+        height: 30px !important;
+        line-height: 30px !important;
+        width: 100px !important;
+        margin-top: 0 !important;
+        color: #fff !important;
+        border: 0 !important;
+        background-color: #ff6600 !important;
+      }
+    }
+
+    .am-input-label,
+    .am-textarea-label {
+      width: 70px !important;
+    }
+
+    textarea {
+      height: 132px !important;
+      line-height: 20px !important;
+      padding: 5px 10px !important;
+    }
+
+    .ts-input {
+      input {
+        border-color: transparent !important;
+        color: #ff6600 !important;
+        padding: 0 !important;
+      }
+    }
+
+    .cb-btn {
+
+      .am-button {
+        margin-top: 0 !important;
+        color: #fff !important;
+        font-size: 15px !important;
+        height: 50px !important;
+        line-height: 50px !important;
+        border: 0 !important;
+        background-color: #ff6600 !important;
+      }
+    }
+  }
+}

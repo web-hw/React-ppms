@@ -1,0 +1,95 @@
+.footer {
+  height: 50px;
+  padding-top: 6px;
+  border-top: 1px solid #ccc;
+
+  img {
+    width: auto;
+    height: 20px;
+  }
+
+  span {
+    height: 24px;
+    line-height: 24px;
+    color: #a5a5a5;
+    &:global(.active) {
+      color: #fb3f3e;
+    }
+  }
+
+  :global {
+    .cb-badge {
+      position: absolute;
+      top: 0;
+      left: 60%;
+      transform: translateY(-30%);
+      // margin-right: -15px;
+      height: 14px;
+      line-height: 14px;
+      min-width: 14px;
+      max-width: 23px;
+      padding: 0 4px;
+      box-sizing: border-box;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #FF3737;
+      border-radius: 7px;
+      font-size: 10px;
+      color: #fff;
+      font-style: normal;
+    }
+
+    .am-flexbox-item {
+      margin-left: 0 !important;
+      padding: 0 5px !important;
+      position: relative;
+    }
+
+    .am-flexbox {
+      overflow: visible !important;
+    }
+
+    .fixed-width {
+      margin-top: -20px;
+      box-sizing: border-box;
+      width: 62px;
+      height: 62px;
+      border-top: 1px solid #ccc;
+      border-radius: 50%;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .fixed-width::before {
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      content: '';
+      width: 64px;
+      height: 49px;
+      transform: translateX(-50%);
+      background-color: #fff;
+      z-index: 100;
+    }
+
+    .fixed-width-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 64px;
+      height: 64px;
+      padding: 6px;
+      z-index: 200;
+      box-sizing: border-box;
+      text-align: center;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}

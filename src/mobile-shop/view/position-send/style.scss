@@ -1,0 +1,78 @@
+.position-send {
+  :global {
+    .hp60 {
+      height: 60%;
+    }
+    .hp40 {
+      height: 40%;
+    }
+
+    .amap-logo {
+      right: 10px !important;
+      left: auto !important;
+      bottom: 5px !important;
+    }
+
+    .amap-copyright {
+      visibility: hidden !important;
+    }
+
+    .ope-up-down {
+      height: 44px;
+      em {
+        @include bg-img;
+        display: inline-block;
+        vertical-align: top;
+        width: 24px;
+        height: 24px;
+        transform-origin: center center;
+        transition: all 100ms;
+
+        &.active {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    .search-content {
+      padding: 80px 10px 10px 10px;
+
+      .cb-radio {
+        .am-list-item {
+          padding: 0 !important;
+          &:first-child,
+          &:last-child {
+            border-color: transparent !important;
+          }
+        }
+        .name, .address {
+          height: 20px;
+          line-height: 20px;
+        }
+        .name {
+          color: #333;
+        }
+        .address {
+          color: #999;
+        }
+        .am-radio-inner:after {
+          border-color: #fb3f3e !important;
+        }
+        .am-list-extra {
+          flex-basis: 15% !important;
+        }
+      }
+    }
+
+    .search {
+      .am-search {
+        background-color: #fff;
+      }
+
+      .am-search-cancel {
+        background-color: #fb3f3e;
+        color: #fff;
+      }
+    }
+  }
+}

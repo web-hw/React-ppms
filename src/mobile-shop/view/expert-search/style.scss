@@ -1,0 +1,70 @@
+.expert-empty {
+  &::before {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 20px;
+    padding: 0 20px;
+    text-align: center;
+    transform: translateY(-50%);
+    content: '没有搜索到相关专家，请核对后重新搜索';
+    font-size: 15px;
+    color: #4d4d4d;
+  }
+}
+
+.expert-item {
+  :global {
+    .item-header {
+      height: 60px;
+
+      .fl {
+        width: 60%;
+        padding-left: 70px;
+        box-sizing: border-box;
+
+        img {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+        }
+
+        div {
+          line-height: 60px;
+        }
+      }
+
+      .fr {
+        width: 40%;
+
+        span {
+          max-width: 100%;
+          color: #fff;
+          height: 25px;
+          line-height: 25px;
+          padding: 0 7px;
+          background-color: #fb3f3e;
+        }
+      }
+    }
+
+    .item-content {
+      div {
+        font-size: 12px;
+        color: #999;
+
+        &:first-child {
+          height: 32px;
+          line-height: 32px;
+        }
+
+        &:last-child {
+          line-height: 22px;
+          max-height: 66px;
+        }
+      }
+    }
+  }
+}

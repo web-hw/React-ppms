@@ -1,0 +1,53 @@
+:global{
+  .detail{
+    overflow: hidden;
+    border-bottom:1px solid #e6e6e6;
+    line-height: 20px;
+  }
+  .price{
+    color:#ff6600;
+  }
+  img{
+    width: 15px;
+  }
+  .title{
+    float: left;
+  }
+  .time{
+    float: right;
+    color:#666;
+    line-height: 22px;
+  }
+  .tes{
+    max-width: 50%;
+  }
+  .item{
+    border-bottom:1px solid #e6e6e6;
+    overflow: hidden;
+  }
+  .offer{
+    float: left;
+  }
+  .date{
+    float:right;
+  }
+  p{
+    text-align: justify;
+    line-height: 20px;
+  }
+  .bord{
+    border-left:3px solid #ff6600;
+  }
+  .foot{
+    margin-left:130px;
+    margin-right:125px;
+    background: #ff6600;
+    width: 100px;
+    border-radius:40px;
+    text-align: center;
+  }
+  a{
+    color:#fff;
+    text-decoration:none;
+  }
+}

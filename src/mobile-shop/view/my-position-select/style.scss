@@ -1,0 +1,35 @@
+.my-position-select {
+  background-color: #fafafa;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+  }
+}
+
+.item {
+  background-color: #fff;
+  &>div {
+    border-top: 1px solid #f0f0f0;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #333;
+  }
+
+  &:first-child>div {
+    border-top: 0;
+  }
+
+  :global {
+    .am-icon {
+      color: #ccc !important;
+      margin-right: 8px;
+      margin-top: 11px;
+    }
+  }
+}

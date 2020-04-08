@@ -1,0 +1,15 @@
+.captcha-btn {
+  &:global(.cb-btn) {
+    color: #fff !important;
+    width: 105px !important;
+    margin-left: 5px !important;
+  }
+  &:global(.num) {
+    background-color: #ff4d00 !important;
+    border: 0 !important;
+  }
+  &:global(.img) {
+    @include bg-img;
+    background-clip: content-box;
+  }
+}

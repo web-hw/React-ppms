@@ -1,0 +1,58 @@
+.login {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  :global {
+    .content {
+      width: 720px;
+      height: 400px;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .fl {
+      background-color: #006FFF;
+      background-image: linear-gradient(to right, #006FFF, #0072FF, #216CBD);
+
+      img {
+        width: 82%;
+        height: auto;
+      }
+    }
+
+    .cb-from {
+      padding-top: 40px;
+      padding-right: 10px;
+      width: 220px;
+      height: 190px;
+    }
+
+    .info {
+      top: -38px;
+      border-bottom: 1px solid #1262B7;
+
+      img {
+        width: auto;
+        height: 18px;
+      }
+    }
+  }
+}
+
+.login-form {
+  input {
+    padding-left: 40px !important;
+  }
+  :global {
+    .ant-input-prefix img {
+      width: 15px;
+      height: auto;
+    }
+
+    .ant-btn-primary {
+      width: 100% !important;
+      background-image: linear-gradient(to right, #00A7FF, #0068FF);
+    }
+  }
+}

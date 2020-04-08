@@ -1,0 +1,83 @@
+.edit-notice {
+  padding-top: 50px;
+  padding-bottom: 51px;
+
+  :global {
+    .cb-btn {
+      padding: 8px 70px;
+      .am-button {
+        height: 35px !important;
+        line-height: 34px !important;
+        color: #fff !important;
+        font-size: 15px !important;
+        border-color: transparent !important;
+        background-color: #fb3f3e !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    .am-textarea-item {
+      padding: 0 !important;
+
+      textarea {
+        padding: 6px 10px !important;
+        line-height: 20px !important;
+        font-size: 12px !important;
+        height: 114px !important;
+      }
+    }
+
+    .set-def {
+      font-size: 13px;
+      color: #333;
+      height: 30px;
+      line-height: 30px;
+      .am-switch {
+        margin-left: 25px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 2.5px;
+        input {
+          padding: 0 !important;
+          width: 50px !important;
+          height: 25px !important;
+        }
+
+        .checkbox {
+          width: 50px !important;
+          height: 25px !important;
+          border-radius: 0 !important;
+          background-color: transparent !important;
+          border-radius: 12.5px !important;
+
+          &::before {
+            width: 50px !important;
+            background-color: #d9d9d9 !important;
+            left: 0 !important;
+            top: 0 !important;
+            height: 25px !important;
+            border-radius: 12.5px !important;
+          }
+
+          &::after {
+            left: 2px !important;
+            top: 1px !important;
+            width: 22px !important;
+            height: 22px !important;
+            border-radius: 50%;
+            box-shadow: 1px #d9d9d9;
+          }
+        }
+
+        input[type=checkbox]:checked + .checkbox:after {
+          transform: translateX(0);
+          left: 26px !important;
+        }
+        input[type=checkbox]:checked + .checkbox::before {
+          background-color: #fb3f3e !important;
+          transform: scale(1) !important;
+        }
+      }
+    }
+  }
+}

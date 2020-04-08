@@ -1,0 +1,73 @@
+.notice-info-item {
+  width: 100%;
+  height: 88.7px;
+  margin-top: 10px;
+  padding: 16.85px 10px 16.85px 75px;
+  box-sizing: border-box;
+  background: rgba(255,255,255,1);
+  border: 1px solid rgba(181,181,181,1);
+  box-shadow: 0px 5px 5px 0px rgba(4,0,0,0.1);
+  border-radius: 3px;
+  translate: all 300ms;
+
+  &:hover {
+    background: rgba(201,228,222,1);
+
+    :global {
+      .notice-info-icon {
+        background-color: #fff;
+        background-image: url(../../../../assets/images/notice-act.png);
+      }
+    }
+  }
+
+  :global {
+    .notice-info-icon {
+      top: 16.85px;
+      left: 10px;
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      translate: all 300ms;
+      background-color: #1262b7;
+      background-repeat: no-repeat;
+      background-size: 20px 24px;
+      background-position: center center;
+      background-image: url(../../../../assets/images/notice-def.png);
+
+      em {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        background-color: #FF3600;
+        border-radius: 50%;
+      }
+    }
+
+    .info-name,
+    .info-content {
+      width: 100%;
+      height: 27.5px;
+      line-height: 27.5px;
+    }
+
+    .info-name {
+      color: #333;
+      font-size: 18px;
+      font-weight: 400;
+      padding-right: 125px;
+      box-sizing: border-box;
+
+      .time {
+        color: #999;
+        font-size: 12px;
+      }
+    }
+    .info-content {
+      color: #666;
+      font-size: 14px;
+    }
+  }
+}

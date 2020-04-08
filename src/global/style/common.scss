@@ -1,0 +1,163 @@
+/*****************PC | mobile样式分离部分*****************/
+
+:global {
+  // 浏览器默认样式重置
+  html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline}
+  html {line-height: 1}
+  ol, ul {list-style: none}
+  table {border-collapse: collapse; border-spacing: 0}
+  caption, th, td {text-align: left; font-weight: normal; vertical-align: middle}
+  q, blockquote {quotes: none}
+  q:before, q:after, blockquote:before, blockquote:after {content: ""; content: none}
+  a, img {border: none}
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {display: block}
+
+  // 字体大小
+  .fs0 {font-size: 0}
+  $fs: 6;
+  @while $fs <= 45 {
+    .fs#{$fs} {font-size: $fs * 1px !important;}
+    $fs: $fs + 1
+  }
+
+  // font weight
+  $fw: 1;
+  @while $fw <= 9 {
+    // 400 -- normal 700 -- bold
+    $ifw: $fw * 100;
+    .fw#{$ifw} {font-weight: $ifw !important;}
+    $fw: $fw + 1
+  }
+
+  .fsn {font-style: normal}
+
+  // 首行缩进2字符
+  .ti2 {text-indent: 2em !important;}
+
+  // text line
+  .tdu {text-decoration: underline !important;}
+  .tdn {text-decoration: none !important;}
+  .tdlt {text-decoration: line-through !important;}
+
+  // text align
+  .tal {text-align: left !important;}
+  .tac {text-align: center !important;}
+  .tar {text-align: right !important;}
+
+  // float
+  .fl {float: left !important; display: inline}
+  .fr {float: right !important; display: inline}
+  .clearfix {*zoom: 1}
+  .clearfix:after {content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden}
+
+  // vertical align
+  .vat {vertical-align: top !important;}
+  .vam {vertical-align: middle !important;}
+  .vab {vertical-align: bottom !important;}
+
+  // display
+  .dn {display: none !important;}
+  .db {display: block !important;}
+  .di {display: inline !important;}
+  .dib {display: inline-block !important;; vertical-align: middle; *vertical-align: auto; *zoom: 1; *display: inline}
+
+  // box-sizing
+  .bsb {box-sizing: border-box !important;}
+  .bsc {box-sizing: content-box !important;}
+
+  // position
+  .pr {position: relative !important;}
+  .pa {position: absolute !important;}
+  .pf {position: fixed !important;}
+  .palt {top: 0; left: 0; @extend .pa;}
+  .part {top: 0; right: 0; @extend .pa;}
+  .palb {bottom: 0; left: 0; @extend .pa;}
+  .parb {bottom: 0; right: 0; @extend .pa;}
+  .pflt {top: 0; left: 0; @extend .pf;}
+  .pfrt {top: 0; right: 0; @extend .pf;}
+  .pflb {bottom: 0; left: 0; @extend .pf;}
+  .pfrb {bottom: 0; right: 0; @extend .pf;}
+  .prt-1 { top: -1px; @extend .pr; }
+  .mc {@extend .pa; top: 50%; left: 50%; transform: translate(-50%, -50%)}
+
+  // z index
+  $zi: 10;
+  @for $i from 0 through $zi {
+    $izi: 100 * $i;
+    .zi#{$izi} {z-index: $izi !important;}
+  }
+
+  // 宽高
+  .wp100 {width: 100%}
+  .hp100 {height: 100%}
+  .wp50 {width: 50%}
+  .hp50 {height: 50%}
+
+  // 边距
+  .ma {margin: 0 auto}
+  .pb0 { padding-bottom: 0 !important }
+  $mi: 10;
+  @while ($mi > 0) {
+    $cm: $mi * 5;
+    .mt#{$cm} {
+      margin-top: $cm * 1px !important;
+    }
+    .mr#{$cm} {
+      margin-right: $cm * 1px !important;
+    }
+    .mb#{$cm} {
+      margin-bottom: $cm * 1px !important;
+    }
+    .ml#{$cm} {
+      margin-left: $cm * 1px !important;
+    }
+    .pt#{$cm} {
+      padding-top: $cm * 1px !important;
+    }
+    .pr#{$cm} {
+      padding-right: $cm * 1px !important;
+    }
+    .pb#{$cm} {
+      padding-bottom: $cm * 1px !important;
+    }
+    .pl#{$cm} {
+      padding-left: $cm * 1px !important;
+    }
+    .p#{$cm} {
+      padding: $cm * 1px !important;
+    }
+    .plr#{$cm} {
+      padding: 0 $cm * 1px !important;
+    }
+    .ptb#{$cm} {
+      padding: $cm * 1px 0 !important;
+    }
+    $mi: $mi - 1
+  }
+
+  // 其他
+  .cp {cursor: pointer}
+  .oh {overflow: hidden}
+  .oa {overflow: auto}
+  // safari自定义滚动卡顿问题
+  .isb {-webkit-overflow-scrolling: touch; overflow-scrolling: touch}
+  .oax {overflow-x: auto; overflow-y: hidden; @extend .isb;}
+  .oay {overflow-y: auto; overflow-x: hidden; @extend .isb;}
+  .sb {
+    // 定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸 width: 0锤子滚动条隐藏 height: 0水平滚动条隐藏
+    $sh: 10px;
+    &::-webkit-scrollbar {width: 0; height: $sh; background-color: transparent}
+    // 定义滚动条轨道 内阴影+圆角
+    &::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 $sh / 2 rgba(0, 0, 0, 0); border-radius: $sh / 2; background-color: transparent}
+    // 定义滑块 内阴影+圆角
+    &::-webkit-scrollbar-thumb {border-radius: $sh / 2; -webkit-box-shadow: inset 0 0 $sh / 2 rgba(0, 0, 0, 0); background-color: #ccc}
+  }
+  .tes {white-space: nowrap; overflow: hidden; text-overflow: ellipsis}
+  .tes2 {@include tes-line(2)}
+  .tes3 {@include tes-line(3)}
+  .tes4 {@include tes-line(4)}
+  .mto::before {content: "."; display: block; height: 0; visibility: hidden;}
+  html, body, #root {@extend .wp100; @extend .hp100; @extend .oh; touch-action: none}
+  #root {@extend .oay;}
+  * { font-family: Microsoft YaHei !important; }
+}

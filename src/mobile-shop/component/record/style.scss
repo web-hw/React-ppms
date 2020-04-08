@@ -1,0 +1,84 @@
+@keyframes record-ani {
+  0% {
+    background-image: url(./images/recording-1.png);
+  }
+  15% {
+    background-image: url(./images/recording-2.png);
+  }
+  30% {
+    background-image: url(./images/recording-3.png);
+  }
+  45% {
+    background-image: url(./images/recording-4.png);
+  }
+  50% {
+    background-image: url(./images/recording-5.png);
+  }
+  55% {
+    background-image: url(./images/recording-6.png);
+  }
+  70% {
+    background-image: url(./images/recording-7.png);
+  }
+  85% {
+    background-image: url(./images/recording-8.png);
+  }
+  100% {
+    background-image: url(./images/recording-9.png);
+  }
+}
+
+.record {
+  display: none;
+  opacity: 0;
+  z-index: 9999;
+  transition: all 300ms;
+  background-color: rgba(255, 255, 255, .2);
+
+  &:global(.active) {
+    display: block;
+    opacity: 1;
+  }
+
+  :global {
+    .content {
+      width: 150px;
+      height: 150px;
+      background-color: rgba(0, 0, 0, .7);
+      border-radius: 10px;
+      overflow: hidden;
+
+      .icon {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+
+        img {
+          width: auto;
+        }
+
+        img, em {
+          display: inline-block;
+          vertical-align: top;
+          margin-top: 10px;
+          height: 80px;
+        }
+
+        em {
+          width: 27px;
+          margin-left: 10px;
+          @include bg-img;
+          background-image: url(./images/recording-1.png);
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+        }
+      }
+
+      p {
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+  }
+}

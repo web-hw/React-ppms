@@ -1,0 +1,172 @@
+.info-content {
+  h6 {
+    color: #1a1a1a;
+    line-height: 30px;
+  }
+  p {
+    color: #333;
+    line-height: 22px;
+  }
+  :global {
+    .footer {
+      height: 42px;
+      line-height: 42px;
+      color: #b5b5b5;
+      &>span{
+        max-width: 48%;
+      }
+      em {
+        width: 14px;
+        height: 12px;
+        @include bg-img;
+      }
+    }
+  }
+}
+.info-company {
+  :global {
+    .title {
+      height: 65px;
+      padding-left: 70px;
+      padding-right: 70px;
+      em {
+        top: 10px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        @include bg-img;
+        background-color: #f0f0f0;
+        background-size: 70% auto;
+      }
+      &>span {
+        top: 22.5px;
+        right: 15px;
+        width: 46px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 10px;
+        background-color: #fb3f3e;
+      }
+      h6 {
+        color: #1a1a1a;
+      }
+      p {
+        color: #808080;
+      }
+      &>div {
+        padding: 12px 0;
+      }
+    }
+    .content {
+      background-color: #fafafa;
+      color: #949494;
+      line-height: 20px;
+    }
+  }
+}
+.info-recommend {
+  :global {
+    .title {
+      color: #1a1a1a;
+      height: 26px;
+      line-height: 26px;
+      a {
+        margin-top: 3.6px;
+        color: #8c8c8c;
+        width: 40px;
+        height: 18px;
+        line-height: 18px;
+        border-radius: 9px;
+        background-color: #fafafa;
+      }
+    }
+    .rcmd-item {
+      padding: 12.5px 115px 15px 0;
+      border-bottom: 1px solid #e6e6e6;
+      &:last-child {
+        border-bottom: 0;
+      }
+      img {
+        top: 12.5px;
+        width: 100px;
+        height: 70px;
+      }
+      div {
+        height: 70px;
+      }
+      h6 {
+        color: #1a1a1a;
+        line-height: 18px;
+        height: 18 * 3px;
+      }
+      p {
+        height: 17px;
+        line-height: 17px;
+        color: #a6a6a6;
+        em {
+          margin-top: 4.5px;
+          width: 12px;
+          height: 8px;
+          @include bg-img;
+        }
+        span:first-child {
+          max-width: 66%;
+        }
+        span:last-child {
+          max-width: 34%;
+        }
+      }
+    }
+  }
+}
+
+// Todo提取组件
+.info-comment {
+  color: #1a1a1a;
+  :global {
+    .comment-item {
+      border-bottom: 1px solid #ededed;
+      &:last-child {
+        border-bottom: 0
+      }
+    }
+    .comment-item-title {
+      height: 20px;
+      line-height: 20px;
+      color: #808080;
+      em {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #c2c2c2;
+      }
+      b {
+        @include bg-img;
+        margin-top: 3.5px;
+        width: 12px;
+        height: 11px;
+      }
+      span:first-child {
+        max-width: 70%;
+      }
+      span:last-child {
+        max-width: 30%;
+      }
+    }
+    .comment-item-content {
+      padding-top: 7.5px;
+      padding-bottom: 7.5px;
+      line-height: 22px;
+      color: #1a1a1a;
+    }
+    .comment-item-footer {
+      line-height: 25px;
+      padding-bottom: 7.5px;
+      color: #858585;
+      span {
+        max-width: 50%;
+      }
+    }
+  }
+}

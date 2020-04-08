@@ -1,0 +1,269 @@
+.apply-aftermarket {
+  background-color: #fafafa;
+  padding-bottom: 55px;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+
+    .cb-btn {
+      height: 50px !important;
+      line-height: 50px !important;
+      margin-top: 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: #ff6600 !important;
+      color: #fff !important;
+      font-size: 15px !important;
+    }
+
+    .price {
+      color: #ff6600;
+    }
+  }
+}
+
+.title {
+  height: 36px;
+  color: #333;
+  background-color: #f7f7f7;
+
+  span {
+    height: 36px;
+    line-height: 36px;
+  }
+
+  :global {
+    .fr {
+      color: #999;
+      font-weight: 400;
+      position: relative;
+      padding-right: 24px;
+
+      .am-icon {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        color: #ccc !important;
+      }
+    }
+    .info {
+      color: #999;
+      font-weight: 400;
+    }
+  }
+}
+
+.msg {
+  :global {
+    .am-flexbox-item {
+      height: 28px;
+      line-height: 26px;
+      color: #333;
+      font-weight: 700;
+      font-size: 11px;
+      border-radius: 3px;
+      margin-left: 10px !important;
+      text-align: center;
+      border: 1px solid #666;
+
+      &:first-child {
+        margin-left: 0 !important;
+      }
+
+      &.active {
+        color: #ff6600;
+        border-color: #ff6600;
+      }
+    }
+
+    .content {
+      border-top: 1px solid #f0f0f0;
+
+      .item {
+        margin-top: 10px;
+        height: 81px;
+        padding-left: 100px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        .img {
+          width: 90px;
+          border: 1px solid #f0f0f0;
+          @include bg-img;
+          background-size: auto 70px !important;
+        }
+
+        .title {
+          color: #333;
+        }
+        .desc {
+          color: #999;
+        }
+
+        .title, .desc {
+          height: 27px;
+          line-height: 27px;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  height: 60px;
+  line-height: 20px;
+  color: #999;
+
+  div:first-child {
+    color: #333;
+  }
+
+  :global {
+    .am-list-item,
+    .am-list-line,
+    .am-textarea-control,
+    .am-input-control,
+    textarea,
+    input {
+      padding: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      line-height: 20px !important;
+      font-size: 12px !important;
+      color: #333 !important;
+      min-height: 0 !important;
+    }
+  }
+}
+
+.content-input {
+  height: 40px !important;
+}
+
+.imgs {
+  :global {
+    .am-grid-item-content {
+      padding: 10px 0 0 10px !important;
+      box-sizing: border-box;
+    }
+
+    .item {
+      border: 1px solid #f0f0f0;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    .is-sel {
+      border-style: dashed !important;
+
+      &>div {
+        @include bg-img;
+        background-size: auto 22px !important;
+        background-position: center 0 !important;
+        height: 64px;
+        padding: 30px 10px 0;
+        box-sizing: border-box;
+      }
+    }
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  h6, p {
+    line-height: 17px;
+  }
+
+  h6 {
+    color: #666;
+  }
+  p {
+    color: #999;
+  }
+}
+
+.address {
+  h6 {
+    line-height: 32px;
+    height: 32px;
+    color: #333;
+
+    span {
+      max-width: 50%;
+    }
+  }
+
+  p {
+    line-height: 20px;
+    color: #999;
+    padding-left: 15px;
+    padding-right: 30px;
+
+    em {
+      @include bg-img;
+      background-size: 8px auto !important;
+      background-position: left center !important;
+      width: 15px;
+      height: 20px;
+    }
+
+    :global {
+      .am-icon {
+        color: #ccc !important;
+        top: -1.5px;
+        right: -6px;
+      }
+    }
+  }
+}
+
+.reason-modal {
+  :global {
+    .am-modal-header,
+    .am-modal-title {
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+      font-size: 15px;
+      color: #333;
+      padding: 0;
+    }
+
+    .am-radio-inner {
+      top: -2px;
+      width: 20px !important;
+      height: 20px !important;
+      @include bg-img;
+      background-size: 16px auto;
+      background-image: url('../../assets/images/reason-def.png');
+
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .am-radio-checked .am-radio-inner {
+      background-image: url('../../assets/images/reason-act.png');
+    }
+
+    .cb-btn {
+      border-radius: 0 !important;
+      border: 0 !important;
+      background-color: #ededed !important;
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.reason-modal-content {
+  max-height: 300px;
+}

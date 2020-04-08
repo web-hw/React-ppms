@@ -1,0 +1,275 @@
+.home {
+  :global {
+    .ct-am-fb-itm {
+      @include ml-no-first(5);
+    }
+  }
+}
+.logo {
+  top: 20px;
+  height: 42px;
+  background-color: transparent;
+  transition: all 600ms;
+  &:global(.active) {
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 8px #aaa;
+  }
+  img {
+    width: auto;
+    height: 22px;
+  }
+}
+.banner-logo {
+  top: 33px;
+  left: 50%;
+  width: 88px;
+  margin-left: -44px;
+}
+.banner {
+  height: 180px;
+}
+.nav {
+  margin-top: -15px;
+  :global {
+    .am-grid-item-content {
+      padding: 0 !important;
+    }
+    .am-grid {
+      padding-bottom: 12px;
+    }
+  }
+}
+.nav-item {
+  margin-bottom: 3px;
+  img {
+    width: 36px;
+  }
+  span {
+    color: #333;
+  }
+}
+.first-new {
+  border-top: 1px solid #ededed;
+  padding-left: 76px !important;
+  a {
+    height: 15px;
+    line-height: 15px;
+    color: #333;
+    padding: 0 10px;
+  }
+  a:first-child {
+    color: #fb3f3e;
+    border-right: 1px solid #ededed;
+    top: 10px;
+  }
+}
+.statistics {
+  color: #757575;
+  :global {
+    .am-flexbox-item {
+      height: 50px;
+      background-repeat: no-repeat;
+      background-position: 90% center;
+      background-size: 24px auto !important;
+      div {
+        line-height: 30px;
+      }
+    }
+  }
+  span {
+    color: #c8c8c8;
+    line-height: 20px;
+  }
+  em {
+    color: #fe8261;
+    top: -2px;
+    max-width: 74%;
+  }
+}
+.sgst-info,
+.exhibition {
+  h6 {
+    color: #4d4d4d;
+    line-height: 38px;
+  }
+  img {
+    height: 82px;
+  }
+}
+.exhibition {
+  h6 {
+    line-height: 34px;
+  }
+  span {
+    max-width: 48%;
+    color: #a1a1a1;
+  }
+}
+.bus-circle {
+  &>div {
+    padding-right: 2.5px;
+    &:nth-child(2n) {
+      padding-right: 0;
+      padding-left: 2.5px;
+    }
+  }
+  a {
+    height: 56px;
+    padding: 10px 5px;
+    box-shadow: 0 0 4px #eee;
+    :global {
+      .fr {
+        margin-top: 6px;
+        height: 24px;
+      }
+    }
+  }
+  h6 {
+    color: #333;
+    line-height: 18px;
+  }
+  img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: -5px;
+  }
+  span {
+    line-height: 14px;
+    color: #fff;
+    border-radius: 7px;
+    max-width: 100%;
+    background-color: #fd9887;
+  }
+}
+.expert {
+  background-color: #f7f8fa;
+  a {
+    padding: 3px;
+    transition: all 200ms;
+    &:global(.active) {
+      margin-top: -6px;
+      box-shadow: 0 3px 6px #ccc;
+      margin-bottom: 6px;
+    }
+  }
+  img {
+    // height: 78px;
+    max-width: 100%;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  span {
+    color: #999;
+    line-height: 25px;
+    max-width: 48%;
+    &:first-child {
+      color: #1a1a1a;
+    }
+  }
+}
+.tech-lib-item {
+  padding-top: 13px;
+  padding-left: 60px;
+  border-top: 1px solid #ededed;
+  &:first-child {
+    border-top: 0;
+  }
+  img {
+    top: 18px;
+    width: 50px;
+    height: 65px;
+  }
+  em {
+    @include bg-img;
+    top: 5px;
+    width: 12px;
+    height: 13px;
+  }
+  p {
+    color: #a6a6a6;
+  }
+  h6 {
+    color: #1a1a1a;
+    line-height: 24px;
+    height: 48px;
+  }
+}
+.pro-mkt {
+  &>h6 {
+    height: 40px;
+    color: #232a2b;
+    border-bottom: 1px solid #f0f0f0; // #f0f0f0
+    span {
+      line-height: 40px;
+      width: 73px;
+    }
+    em {
+      height: 40px;
+      width: 12px;
+    }
+  }
+  :global {
+    .am-tabs-tab-bar-wrap {
+      padding-left: 82px !important;
+
+    }
+    .am-tabs-default-bar-tab {
+      line-height: 39px !important;
+      height: 39px !important;
+    }
+    .pro-item {
+      padding-right: 5px;
+      &:nth-child(2n) {
+        padding-right: 0;
+        padding-left: 5px;
+      }
+    }
+    .img {
+      height: 130px;
+      border-bottom: 1px solid #f0f0f0;
+      img {
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+    .content {
+      h6 {
+        color: #383838;
+        line-height: 22px;
+        max-height: 44px;
+      }
+      p {
+        color: #8f8f8f;
+      }
+      div {
+        span {
+          max-width: 48%;
+          line-height: 34px;
+        }
+        span:first-child {
+          color: #fb3f3e;
+        }
+        span:last-child {
+          color: #c1c1c1;
+        }
+      }
+    }
+  }
+}
+.title {
+  line-height: 36px;
+  color: #232a2b;
+
+  a {
+    color: #cbcbcb;
+    background-color: #fafafa;
+    height: 18px;
+    width: 40px;
+    border-radius: 8px;
+    line-height: 18px;
+    margin-top: 9px;
+  }
+}
+

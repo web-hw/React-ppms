@@ -1,0 +1,20 @@
+.edit-nick-name {
+  :global {
+    .cb-header {
+      .am-button {
+        background-color: #fb3f3e !important;
+        border-color: transparent !important;
+        color: #fff !important;
+      }
+    }
+
+    .cb-input {
+      input {
+        padding-top: 13px !important;
+        padding-bottom: 13px !important;
+        line-height: 17px !important;
+        height: 45px !important;
+      }
+    }
+  }
+}

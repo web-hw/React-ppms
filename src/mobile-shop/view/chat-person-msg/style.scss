@@ -1,0 +1,53 @@
+.chat-person-msg {
+  :global {
+    .item {
+      height: 50px;
+      padding-left: 80px;
+      padding-right: 30px;
+      border-top: 1px solid #F2F2F2;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+
+      .label {
+        line-height: 49px;
+        left: 10px;
+        width: 60px;
+        font-size: 14px;
+        color: #666;
+        text-align: left;
+      }
+
+      .content {
+        font-size: 14px;
+        color: #666;
+        line-height: 49px;
+        text-align: right;
+
+        .img {
+          display: inline-block;
+          vertical-align: top;
+          height: 40px;
+          width: 40px;
+          margin-top: 5px;
+          border-radius: 4px;
+        }
+      }
+
+      .icon {
+        color: #333 !important;
+        right: 4px;
+        top: 0.3734rem;
+      }
+    }
+  }
+}
+
+.cb-radio {
+  :global {
+    .cb-radio .am-list-item {
+      padding: 0 !important;
+    }
+  }
+}

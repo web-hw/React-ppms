@@ -1,0 +1,175 @@
+.report-title {
+  padding: 7.5px 10px;
+
+  div {
+    font-size: 12px;
+    color: #1a1a1a;
+    height: 27px;
+    line-height: 27px;
+  }
+
+  :global {
+    .am-radio-wrapper {
+      margin-right: 20px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .raido {
+      .am-radio-inner {
+        width: 16px !important;
+        height: 16px !important;
+        margin-right: 7px !important;
+        @include bg-img;
+        background-image: url(../../assets/images/sp-adrs-def.png);
+        background-size: 14px auto !important;
+        margin-top: -2px;
+
+        &:after {
+          display: none !important;
+        }
+      }
+
+      .am-radio-checked .am-radio-inner {
+        background-image: url(../../assets/images/sp-adrs-act.png);
+      }
+    }
+  }
+}
+
+.report-add,
+.report-reason,
+.report-btn,
+.report-xz,
+.report-imgs {
+  :global {
+    .title {
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #999;
+      background-color: #F0F0F0;
+    }
+  }
+}
+
+.report-imgs {
+  :global {
+    .imgs-wrap {
+      .am-grid-item-content {
+        padding: 5px !important;
+        box-sizing: border-box !important;
+      }
+      .item-img {
+        box-sizing: border-box;
+        border: 1px solid #eee;
+        overflow: hidden;
+      }
+
+      .has-img {
+        &>.palt {
+          background-color: rgba(0, 0, 0, .4);
+        }
+      }
+      .empty-img {
+        background-color: #F0F0F0;
+        .am-icon-cross-circle {
+          transform-origin: center center;
+          transform: translate(-50%, -50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
+.report-xz {
+  :global {
+    .content {
+      padding: 5px 10px;
+      line-height: 18px;
+      color: #666;
+    }
+  }
+}
+
+.report-btn {
+  em {
+    display: inline-block;
+    vertical-align: top;
+    width: 21px;
+    height: 100%;
+    @include bg-img;
+    background-position: left center !important;
+    background-size: 16px auto !important;
+  }
+
+  :global {
+    .cb-btn {
+      padding: 20px 70px;
+      .am-button {
+        height: 35px !important;
+        line-height: 34px !important;
+        color: #fff !important;
+        font-size: 15px !important;
+        border-color: transparent !important;
+        background-color: #fb3f3e !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+.report-add {
+  :global {
+    .am-textarea-item {
+      padding: 0 !important;
+    }
+
+    .cb-input {
+      margin: 10px 0 !important;
+    }
+
+    textarea {
+      font-size: 12px !important;
+      line-height: 1.5 !important;
+      height: 56px !important;
+    }
+  }
+}
+
+.report-reason {
+  :global {
+    .am-list-content,
+    .am-list-extra {
+      font-size: 12px !important;
+      color: #1a1a1a !important;
+      padding: 9px 0 !important;
+    }
+
+    .am-radio-inner {
+      top: -4px;
+      width: 20px !important;
+      height: 20px !important;
+      @include bg-img;
+      background-size: 16px auto;
+      background-image: url(../../assets/images/sp-adrs-def.png);
+
+      &::after {
+        display: none !important;
+      }
+    }
+
+    .am-radio-item:last-child {
+      border-bottom-color: transparent !important;
+    }
+
+    .am-radio-checked .am-radio-inner {
+      background-image: url(../../assets/images/sp-adrs-act.png);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.account-info {
+  :global {
+    .item {
+      height: 55px;
+      color: #333;
+      background-color: #fff;
+      border-top: 1px solid #eee;
+      padding: 0 10px 0 80px;
+
+      .label {
+        left: 10px;
+        // width: 56px;
+        width: 60px;
+        line-height: 54px;
+        font-size: 14px;
+        text-align: left;
+      }
+
+      .content {
+        line-height: 54px;
+        font-size: 14px;
+        text-align: right;
+        padding-right: 18px;
+
+        .am-icon {
+          top: 17px;
+          right: -6px;
+        }
+      }
+
+      &.login-time {
+        padding-left: 10px;
+
+        .content {
+          font-size: 12px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

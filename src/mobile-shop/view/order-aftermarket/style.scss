@@ -1,0 +1,99 @@
+
+.order-aftermarket {
+  background-color: #fafafa;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+  }
+}
+
+.header {
+  height: 50px;
+
+  :global {
+    .am-flexbox-item {
+      height: 49px;
+      line-height: 49px;
+      text-align: center;
+      margin-left: 0 !important;
+      font-size: 14px;
+      color: #333;
+      font-weight: 700;
+
+      em {
+        display: inline-block;
+        vertical-align: top;
+        width: 10px;
+        height: 100%;
+        @include bg-img;
+        background-size: 10px auto !important;
+        margin-left: 10px;
+        transform-origin: center center;
+
+        &.active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.title {
+  height: 36px;
+  color: #333;
+  background-color: #f7f7f7;
+
+  span {
+    height: 36px;
+    line-height: 36px;
+  }
+}
+
+
+.content {
+  :global {
+    .good-msg {
+      height: 81px;
+      padding-left: 100px;
+
+      .img {
+        width: 90px;
+        border: 1px solid #f0f0f0;
+        @include bg-img;
+        background-size: auto 70px !important;
+      }
+
+      .title {
+        color: #333;
+      }
+      .desc {
+        color: #999;
+      }
+
+      .title, .desc {
+        height: 27px;
+        line-height: 27px;
+      }
+
+      .price {
+        color: #ff6600;
+      }
+    }
+    .footer {
+      line-height: 30px;
+      color: #893700;
+      padding-right: 27px;
+
+      .am-icon {
+        color: #893700 !important;
+        top: 3.5px;
+        right: -5px;
+      }
+    }
+  }
+}

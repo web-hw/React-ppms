@@ -1,0 +1,47 @@
+.msg {
+  padding-top: 42px;
+}
+
+.wrapper-tbody {
+  td:first-child {
+    cursor: pointer;
+    color: #1262b7;
+  }
+}
+
+.msg-detail-form {
+  :global {
+    .ant-form-item {
+      padding: 0 10px;
+      border-bottom: 1px solid #e8e8e8;
+      margin-bottom: 0 !important;
+
+      .ant-form-item-label,
+      .ant-form-item-control-wrapper {
+        padding: 8px 0;
+      }
+
+      &:not(:last-child) .ant-form-item-control {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      &:last-child {
+        border-bottom-color: transparent;
+
+        .ant-form-item-control-wrapper {
+          background-color: #efefef;
+          width: 100%;
+          border: 1px solid #e8e8e8;
+          padding: 10px;
+        }
+
+        .ant-form-item-control {
+          line-height: 20px;
+          min-height: 60px;
+        }
+      }
+    }
+  }
+}

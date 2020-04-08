@@ -1,0 +1,38 @@
+.title {
+  color: #333;
+  padding: 17px 0 7px;
+}
+
+.login-phone {
+  background-color: #f7f7f7;
+  :global {
+    .cb-btn .am-button {
+      background-color: #ff4d00 !important;
+      border: 0 !important;
+      color: #fff !important;
+    }
+
+    .cb-header {
+      background-color: #f7f7f7 !important;
+    }
+
+    .cb-input {
+      input {
+        line-height: 45px !important;
+        height: 45px !important;
+      }
+      input {
+        padding-left: 70px !important;
+      }
+      .am-input-label {
+        position: absolute;
+        top: 1px;
+        left: 10px;
+        line-height: 43px !important;
+        height: 43px !important;
+        max-width: 50px !important;
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

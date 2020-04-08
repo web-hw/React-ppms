@@ -1,0 +1,17 @@
+.wrap-modal {
+  :global {
+    .ant-modal-close-x {
+      height: 54px !important;
+      line-height: 54px !important;
+      width: 54px !important;
+    }
+    .ant-modal-header,
+    .ant-modal-body {
+      padding: 15px 20px !important;
+    }
+
+    .ant-modal-footer {
+      padding: 10px 15px !important;
+    }
+  }
+}

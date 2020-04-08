@@ -1,0 +1,22 @@
+.cb-send-ope {
+  :global {
+    .am-grid-item-content {
+      padding: 0 !important;
+    }
+    .am-flexbox {
+      padding-bottom: 12px;
+      &:first-child {
+        margin-top: 12px;
+      }
+    }
+    span {
+      margin-top: 5px;
+      height: 15px;
+      line-height: 15px;
+    }
+    img {
+      width: auto;
+      height: 40px;
+    }
+  }
+}

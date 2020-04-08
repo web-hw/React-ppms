@@ -1,0 +1,18 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    "config/**",
+    "*-dist",
+    "node_modules/**",
+    "public/**",
+    "script/**",
+    "src/**",
+    "*.config.js"
+  ],
+  "env": {
+    "NODE_ENV": "development",
+    "PORT": "3000",
+    "HOST": "0.0.0.0"
+  },
+  "ext": "js"
+  }

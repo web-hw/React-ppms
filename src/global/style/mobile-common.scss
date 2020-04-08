@@ -1,0 +1,34 @@
+/*****************mobile 样式分离部分*****************/
+@import './common.scss';
+
+:global {
+  .pb250 {
+    padding-bottom: 250px !important;
+  }
+  .pb210 {
+    padding-bottom: 210px !important;
+  }
+  .ts300 {
+    transition: all 300ms;
+  }
+  * {
+    // 清除safari点击背景
+    -webkit-tap-highlight-color: transparent;
+    // 禁用长按出现提示框
+    -webkit-touch-callout: none;
+    // 取消iOS输入框内部阴影
+    -webkit-appearance: none;
+    // 禁止复制选中文本
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    cursor: pointer !important;
+  }
+  input, button, textarea, radio, checkbox, select, option, [contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    user-select: text;
+  }
+}

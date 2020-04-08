@@ -1,0 +1,142 @@
+.chat-person-file {
+  :global {
+    .img-video-itm {
+      .itm-md {
+        background-color: rgba(255, 255, 255, .4);
+        z-index: 99999;
+      }
+    }
+
+    .sel-icon {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #8b8b8b;
+      top: 25px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      @include bg-img;
+      &.active {
+        border-color: transparent;
+      }
+      &.mc {
+        top: 50%;
+        left: 50%;
+      }
+    }
+
+    .content-item {
+      height: 70px;
+      border-top: 1px solid #F2F2F2;
+
+      .file-msg {
+        margin-top: 17px;
+        height: 35px;
+        padding-left: 53px;
+        padding-right: 110px;
+
+        img {
+          left: 10px;
+          width: 28px;
+          height: 35px;
+        }
+
+        p {
+          height: 17.5px;
+          line-height: 17.5px;
+          // font-size: 14px;
+          font-size: 12px;
+          color: #666;
+        }
+
+        div.part {
+          height: 35px;
+          right: 20px;
+          width: 80px;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .content {
+      padding-top: 60px;
+    }
+    .search {
+      height: 60px;
+      padding: 15px 10px;
+
+      .am-search {
+        background-color: transparent !important;
+      }
+
+      .am-search-cancel {
+        color: #fff;
+        background-color: #fb3f3e;
+      }
+    }
+
+    .img-or-video {
+      .am-grid-item-content {
+        padding: 10px 0 0 10px !important;
+        box-sizing: border-box !important;
+      }
+
+      .am-flexbox {
+        background-color: transparent !important;
+      }
+
+      .img,
+      .cb-video {
+        width: 100% !important;
+        height: 100% !important;
+        border-radius: 0 !important;
+      }
+
+      .cb-video {
+        .plyr__control--overlaid {
+          width: 40px !important;
+          height: 40px !important;
+        }
+      }
+    }
+
+    .footer {
+      height: 50px;
+
+      .fl {
+        padding: 10px 30px;
+
+        span {
+          display: inline-block;
+          vertical-align: top;
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 15px;
+          font-size: 12px;
+          color: #fff;
+          background-color: #FB3F3E;
+        }
+
+        &:last-child span {
+          background-color: #999;
+        }
+      }
+    }
+  }
+}
+
+.delete-file {
+  em {
+    margin: 10px auto;
+    width: 22px;
+    height: 29px;
+    @include bg-img;
+  }
+  p {
+    color: #666;
+  }
+}

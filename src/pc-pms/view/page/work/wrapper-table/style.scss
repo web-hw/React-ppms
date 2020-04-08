@@ -1,0 +1,9 @@
+.table-wrapper {
+  padding: 10px 10px 0 !important;
+
+  :global {
+    .wrapper-content {
+      height: 306px !important;
+    }
+  }
+}

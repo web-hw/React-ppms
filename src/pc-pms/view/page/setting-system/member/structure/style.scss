@@ -1,0 +1,33 @@
+.structure {
+  padding-top: 42px;
+}
+
+.wrapper-tbody {
+  td:last-child span {
+    cursor: pointer;
+    color: #1262b7;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0
+    }
+  }
+}
+
+.structure-ope {
+  :global {
+    .ant-dropdown-menu-item {
+      em {
+        display: inline-block;
+        vertical-align: top;
+        height: 22px;
+        width: 15px;
+        @include bg-img;
+        background-size: 10px auto;
+        background-position: left center;
+      }
+    }
+  }
+}
+
+.edit-structure-modal {}

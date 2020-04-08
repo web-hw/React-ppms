@@ -1,0 +1,10 @@
+.add-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  @include bg-img;
+  background-size: auto 12px !important;
+  background-position: center 45% !important;
+}

@@ -1,0 +1,69 @@
+.bus-circle {}
+.bus-circle-item {
+  :global {
+    .bus-circle-item-title {
+      span:first-child {
+        max-width: 60%;
+      }
+      span:last-child {
+        max-width: 40%;
+      }
+      h6 {
+        span:last-child {
+          color: #fb3f3e;
+        }
+      }
+    }
+    .content-title {
+      color: #1a1a1a;
+      line-height: 36px;
+    }
+    .desc {
+      color: #4d4d4d;
+      line-height: 23px;
+      max-height: 23 * 2px;
+      @include tes-line(2)
+    }
+    .am-flexbox-item {
+      @include ml-no-first(5)
+    }
+    .thumb-msg {
+      height: 36px;
+      line-height: 36px;
+      span {
+        color: #666;
+      }
+      em {
+        @include bg-img;
+        &.thumb {
+          margin-top: 12px;
+          width: 12px;
+          height: 11px;
+        }
+        &.msg {
+          margin-top: 10.5px;
+          width: 15px;
+          height: 13px;
+        }
+      }
+    }
+    .comment-item {
+      color: #959595;
+      line-height: 24px;
+      &:first-child {
+        padding-top: 5px;
+        border-top: 1px solid #ededed;
+      }
+      span {
+        color: #4e4e4e;
+      }
+    }
+    .all-comment {
+      line-height: 23px;
+      color: #fb3f3e;
+      .am-icon {
+        margin-top: 1px;
+      }
+    }
+  }
+}

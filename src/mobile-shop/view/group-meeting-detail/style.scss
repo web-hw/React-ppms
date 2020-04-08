@@ -1,0 +1,102 @@
+.am-picker-meeting {
+  :global {
+    .am-picker-popup-header-left {
+      color: #666 !important;
+    }
+
+    .am-picker-popup-header-right {
+      color: #fb3f3e !important;
+    }
+  }
+}
+
+.group-meeting-detail {
+  padding-top: 55px;
+
+  :global {
+    .cb-header .am-navbar-right {
+      color: #fb3f3e;
+    }
+
+    .header {
+      color: #999;
+      height: 20px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+
+    .input-content {
+      .am-input-item,
+      .am-list-line,
+      input {
+        padding: 0 !important;
+        height: 30px !important;
+        min-height: 0 !important;
+      }
+    }
+
+    .textarea-content {
+      .am-textarea-item,
+      .am-textarea-control {
+        padding: 0 !important;
+      }
+
+      textarea {
+        height: 4 * 18px + 14px;
+      }
+    }
+
+    .input-content input,
+    .textarea-content textarea,
+    .date-content .am-list-extra {
+      padding: 6px 10px !important;
+      line-height: 18px !important;
+      font-size: 14px !important;
+      color: #333 !important;
+      opacity: 1 !important;
+      box-sizing: border-box !important;
+      border: 1px solid #f0f0f0 !important;
+      border-radius: 4px !important;
+    }
+
+    .btn {
+      .am-button {
+        height: 30px !important;
+        line-height: 30px !important;
+        color: #fff !important;
+        font-size: 14px !important;
+        background-color: #fb3f3e !important;
+        border-radius: 4px !important;
+
+        &::before {
+          display: none !important;
+        }
+      }
+    }
+
+    .date-content {
+      *::before,
+      *::after {
+        display: none !important;
+      }
+
+      .am-list-item,
+      .am-list-line {
+        padding: 0 !important;
+        height: 30px !important;
+        min-height: 0 !important;
+        background-color: transparent !important;
+      }
+
+      .am-list-extra {
+        flex-basis: 100% !important;
+        height: 30px !important;
+        text-align: left !important;
+      }
+
+      .empty .am-list-extra {
+        color: #bbb !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.expert-achieve {
+
+  :global {
+
+    .info-item {
+      border-top: 1px dashed #EDEDED;
+      height: 50px;
+      padding-left: 135px;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+
+      div {
+        font-size: 12px;
+        color: #808080;
+        height: 20px;
+        line-height: 20px;
+
+        &.palt {
+          top: 15px;
+          width: 125px;
+        }
+      }
+    }
+
+    .achieve-item {
+      border-top: 1px dashed #EDEDED;
+      height: 110px;
+      padding-left: 100px;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+
+      img.palt {
+        top: 15px;
+        width: 90px;
+        height: 80px;
+      }
+
+      p, h6, .achieve-info {
+        line-height: 20px;
+        height: 20px;
+      }
+
+      h6 {
+        font-size: 13px;
+        font-weight: normal;
+        color: #333;
+      }
+
+      p {
+        font-size: 12px;
+        color: #808080;
+        height: 40px;
+
+        &.h60 {
+          height: 60px;
+        }
+      }
+
+      .achieve-info {
+        background-color: #ededed;
+        max-width: 100%;
+        width: auto;
+        font-size: 11px;
+        color: #808080;
+        padding: 0 15px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

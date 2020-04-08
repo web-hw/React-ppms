@@ -1,0 +1,165 @@
+.banner {
+  height: 155px;
+  :global {
+    .cb-header {
+      background-color: transparent !important;
+      border: none !important;
+      .am-icon,
+      .am-navbar-title {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+.bus-card {
+  margin-top: -100px;
+  &>div {
+    box-shadow: 0 2px 10px -4px #333;
+  }
+  p {
+    color: #333;
+    line-height: 20px;
+    span:last-child {
+      max-width: 40%;
+    }
+    span:first-child {
+      max-width: 56%;
+    }
+
+    :global {
+      .tel-span {
+        @include bg-img;
+        padding-left: 25px;
+        background-position: left center;
+        background-size: auto 100%;
+      }
+    }
+  }
+}
+
+.bus-card-title {
+  height: 62px;
+  padding: 7px 0 7px 77px;
+  :global {
+    .img {
+      display: inline-block;
+      vertical-align: top;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      // @include bg-img;
+    }
+  }
+  h6, p {
+    height: 24px;
+    // line-height: 24px;
+
+    span {
+      height: 100%;
+      line-height: 24px;
+    }
+  }
+  h6 {
+    color: #333;
+    padding-right: 60px;
+  }
+  p {
+    color: #666;
+    // span:last-child {
+    //   margin-left: 7%;
+    // }
+    // span:last-child {
+    //   height: 24px !important;
+    //   line-height: 24px !important;
+    // }
+    span {
+      height: 24px !important;
+      line-height: 24px !important;
+    }
+  }
+
+  :global {
+    .name {
+      // max-width: 60%;
+      max-width: 100%;
+      padding-right: 18px;
+    }
+    .gender {
+      width: 12px;
+      height: 100%;
+      @include bg-img;
+      background-size: 100% auto !important;
+    }
+    .info {
+      width: 55px;
+      color: #666;
+    }
+  }
+}
+
+.msg {
+  h6 {
+    color: #333;
+    line-height: 44px;
+  }
+  :global {
+    .msg-item {
+      height: 50px;
+      line-height: 50px;
+      color: #333;
+      padding: 0 26px 0 10px;
+      span.fr {
+        color: #666;
+        max-width: 70%;
+      }
+
+      .am-icon {
+        top: 15px;
+        right: 4px;
+      }
+
+      &.address-item+.msg-item {
+        height: 55px;
+        border-top: 5px solid #f0f0f0;
+      }
+    }
+  }
+}
+
+.btn,
+.tel-btn {
+  margin-top: 60px;
+  width: 210px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+}
+
+.tel-btn {
+  margin-top: 15px;
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+  line-height: 28px;
+  color: #666;
+}
+
+.del-friend {
+  em {
+    margin: 10px auto;
+    width: 22px;
+    height: 29px;
+    @include bg-img;
+  }
+  p {
+    color: #666;
+  }
+}
+
+.nickname-input {
+  input {
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    line-height: 16px !important;
+  }
+}

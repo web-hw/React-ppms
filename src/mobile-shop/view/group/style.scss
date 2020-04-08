@@ -1,0 +1,38 @@
+.group-item {
+  // padding: 13px 60px 13px 64px;
+  padding: 13px 15px 13px 64px;
+  height: 60px;
+
+  :global {
+    .img {
+      left: 15px;
+      width: 34px;
+    }
+
+    .img,
+    .am-button {
+      top: 13px;
+      height: 34px;
+    }
+
+    .am-button {
+      right: 15px;
+      width: 40px;
+      font-size: 14px !important;
+      background-color: #fb3f3e !important;
+      color: #fff !important;
+      line-height: 34px !important;
+      padding: 0 !important;
+      border-radius: 2px !important;
+    }
+  }
+
+  h6 {
+    color: #333;
+    line-height: 34px;
+  }
+}
+
+.search {
+  height: 50px;
+}

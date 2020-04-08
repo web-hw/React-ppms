@@ -1,0 +1,133 @@
+@import 'global@style/common';
+:global {
+  #root {
+    overflow-y: hidden;
+    overflow-x: auto;
+    @extend .sb;
+  }
+
+  .ant-select-dropdown-menu {
+    @extend .sb;
+  }
+
+  .bg-fff {
+    background-color: #fff;
+  }
+  .bg-f0f0f0 {
+    background-color: #f0f0f0;
+  }
+
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  textarea.ant-input {
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    @extend .sb;
+  }
+
+  .ant-form-horizontal {
+    .ant-form-item {
+      margin-bottom: 17px;
+
+      &.ant-form-item-with-help {
+        margin-bottom: 0;
+      }
+
+      .ant-form-explain {
+        line-height: 1.4;
+        min-height: 20px;
+      }
+    }
+    .ant-row:last-child .ant-form-item,
+    &>.ant-form-item:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  /********************* Popconfirm *********************/
+  .cb-pop-confirm .ant-popover-inner-content {
+    padding: 10px !important;
+  }
+  .cb-pop-confirm .ant-popover-message {
+    padding: 5px 0 10px !important;
+    font-size: 12px !important;
+  }
+
+  .cb-pop-confirm .ant-popover-buttons {
+    margin-bottom: 0 !important;
+
+    .ant-btn {
+      font-size: 12px !important;
+    }
+  }
+
+  /*************日历****************/
+  .ant-calendar-picker-container {
+    min-width: 252px;
+  }
+  .ant-form-item-children,
+  .ant-calendar-picker {
+    display: inline-block;
+    width: 100%;
+  }
+  .ant-calendar {
+    width: 100% !important;
+  }
+
+  /*******************搜索************************/
+  .cb-search,
+  .cb-ope {
+    height: 32px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+  }
+  .cb-ope {
+    left: 0;
+    max-width: 30%;
+
+    .ant-btn {
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0
+      }
+    }
+  }
+  .cb-search {
+    right: 0;
+    max-width: 70%;
+  }
+  .cb-search-btn,
+  .cb-search-condition {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .cb-search-condition {
+    .ant-select,
+    .ant-input {
+      // min-width: 240px;
+      width: 240px;
+    }
+  }
+
+  .cb-search-condition>* {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .cb-search-btn>* {
+    margin-left: 10px;
+  }
+}

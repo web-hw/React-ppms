@@ -1,0 +1,62 @@
+.users {
+  padding-left: 190px;
+}
+
+.department {
+  padding-top: 42px;
+  width: 180px;
+
+  :global {
+    .company {
+      height: 32px;
+
+      .ant-select {
+        width: 100%;
+      }
+    }
+
+    .content {
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+
+      .ant-tree-node-content-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}
+
+.user {
+  :global {
+    .content {
+      padding-top: 42px;
+      min-width: 1000px;
+    }
+  }
+}
+
+.wrapper-tbody {
+  td:last-child span {
+    cursor: pointer;
+    color: #1262b7;
+    margin-left: 10px;
+
+    &:first-child {
+      margin-left: 0
+    }
+  }
+}
+
+.edit-user-modal {
+  :global {
+    .ant-row .ant-form-item {
+      margin-bottom: 17px !important;
+
+      &.ant-form-item-with-help {
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

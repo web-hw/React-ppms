@@ -1,0 +1,87 @@
+.shopping-address {
+  background-color: #fafafa;
+  padding-bottom: 80px;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+  }
+
+  .item {
+    margin-top: 5px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    h6 {
+      color: #333;
+      line-height: 34px;
+      height: 34px;
+
+      span {
+        max-width: 50%;
+      }
+    }
+
+    :global {
+      .address {
+        line-height: 23px;
+        color: #666;
+        max-height: 46px;
+      }
+
+      .ope {
+        height: 42px;
+        padding: 10px 0;
+        box-sizing: border-box;
+        line-height: 22px;
+        color: #999;
+
+        em {
+          display: inline-block;
+          vertical-align: middle;
+          width: 12px;
+          height: 22px;
+          @include bg-img;
+          background-size: 12px auto !important;
+          background-position: center 49% !important;
+        }
+
+        .active {
+          color: #ff6600;
+        }
+
+        span span {
+          display: inline-block;
+          vertical-align: top;
+          @include bg-img;
+          background-size: 12px 13px !important;
+          background-position: left center !important;
+          padding-left: 18px;
+          margin-left: 15px;
+          &:first-child {
+            margin-left: 0
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 80px;
+
+  :global {
+    .am-button {
+      height: 50px !important;
+      line-height: 48px !important;
+      font-size: 15px !important;
+      color: #fff !important;
+      background-color: #ff8500 !important;
+    }
+  }
+}

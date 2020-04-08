@@ -1,0 +1,156 @@
+.my {
+  :global {
+    .am-icon {
+      margin-top: 4px;
+    }
+    .br3 {
+      border-radius: 3px;
+    }
+  }
+}
+.banner {
+  &>img {
+    min-height: 170px;
+  }
+  :global {
+    .cb-header {
+      background-color: transparent !important;
+      border: none !important;
+    }
+    .am-navbar-title {
+      color: #fff !important;
+    }
+    .am-navbar-right img {
+      height: 20px;
+    }
+  }
+}
+.my-msg {
+  top: 32.4%;
+  height: 70px;
+  line-height: 70px;
+  padding-left: 100px;
+  span {
+    left: 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+}
+.vip, .expert-centre, .my-order>a, .about-us>a {
+  height: 30px;
+  line-height: 30px;
+  &>div:global(.fl) {
+    color: #333;
+    max-width: 50%;
+  }
+  &>div:global(.fr) {
+    color: #808080;
+    max-width: 40%;
+  }
+}
+.vip {
+  &>div {
+    &:global(.fl) {
+      padding-left: 18.5px;
+      background-position: 0 center;
+      background-repeat: no-repeat;
+      background-size: 13.5px 11.5px;
+    }
+  }
+}
+.my-account {
+  &>div:first-child {
+    span:first-child {
+      line-height: 34px;
+      color: #333;
+    }
+    span:last-child {
+      color: #808080;
+    }
+    a {
+      margin-top: 17px;
+      width: 80px;
+      height: 20px;
+      line-height: 20px;
+      background-color: #fb3f3e;
+      padding-left: 8px;
+      :global {
+        .am-icon {
+          margin-top: -1px;
+        }
+      }
+    }
+    :global{
+      .fl {
+        max-width: 50%;
+      }
+    }
+  }
+  &>div:last-child {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    a {
+      color: #333;
+      height: 20px;
+      line-height: 20px;
+    }
+    span {
+      color: #fa5301;
+    }
+    em {
+      @include bg-img;
+      width: 20px;
+      border-radius: 50%;
+      height: 20px;
+      background-color: #fb3f3e;
+      background-size: auto 12px !important;
+    }
+    :global {
+      .am-flexbox-item {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+.my-other, .about-us, .my-order {
+  padding-bottom: 23px;
+  :global {
+    .am-grid-item-content {
+      padding: 0 !important;
+      a {
+        width: 70px;
+      }
+      em {
+        width: 50px;
+        height: 50px;
+        @include bg-img;
+        background-color: #f6f6f6;
+        background-size: auto 30px !important;
+      }
+      span {
+        color: #333;
+      }
+    }
+  }
+}
+.my-other, .my-order {
+  :global {
+    .am-grid {
+      width: 90.7%;
+    }
+  }
+}
+.my-order {
+  padding-bottom: 10px;
+}
+.about-us {
+  padding-bottom: 10px;
+  :global{
+    .am-grid-item-content {
+      em {
+        background-size: 100% 100% !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.new {
+  margin-top: 13.75px;
+  padding-left: 154px;
+  height: 60px;
+
+  &:hover {
+    :global {
+      .time, .content div {
+        color: #1262B7 !important;
+      }
+    }
+  }
+
+  :global {
+    .img, .time {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .img {
+      width: 83px;
+    }
+
+    .time {
+      color: #808080;
+      translate: all 300ms;
+
+      div {
+        width: 61px;
+        height: 22px;
+        line-height: 22px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        &:first-child {
+          margin-top: 5px;
+          height: 28px;
+          line-height: 28px;
+        }
+      }
+    }
+
+    .content {
+      div {
+        height: 23px;
+        line-height: 23px;
+        color: #666;
+        box-sizing: border-box;
+        translate: all 300ms;
+
+        &:first-child {
+          padding-top: 5.5px;
+          height: 30.5px;
+          color: #333;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.share {
+  font-size: 0;
+  span {
+    color: #333;
+    line-height: 15px;
+  }
+  img {
+    width: 56px;
+    height: auto;
+  }
+  :global {
+    .am-grid-item-content {
+      padding: 0 !important;
+    }
+  }
+}
+.share-popup {
+  :global {
+    .am-modal-header,
+    .am-modal-title {
+      padding: 0 !important;
+      line-height: 45px;
+      color: #333;
+      font-size: 14px;
+    }
+    .am-button {
+      font-size: 14px;
+      color: #333;
+      background-color: #f2f2f2 !important;
+      border-top: 1px solid #b2b2b2 !important;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 0;
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.edit-shopping-address {
+  background-color: #fafafa;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+
+    .am-navbar-right {
+      color: #ff6600 !important;
+    }
+
+    .cb-input.label2 {
+      .am-input-label {
+        line-height: 20px !important;
+        padding: 5px 0 !important;
+
+        span {
+          margin-left: -5px;
+        }
+      }
+    }
+
+    .cb-input.label120 {
+      .am-input-label {
+        width: 120px !important;
+      }
+    }
+
+    .cb-input {
+      margin-top: 0 !important;
+      input,
+      .am-input-label {
+        line-height: 50px !important;
+        height: 50px !important;
+        border: 0 !important;
+      }
+
+      textarea,
+      .am-textarea-label {
+        height: 60px !important;
+      }
+
+      textarea {
+        padding-left: 70px !important;
+        border: 0 !important;
+      }
+
+      input {
+        padding-left: 70px !important;
+        padding-right: 28px !important;
+      }
+      .am-input-label,
+      .am-textarea-label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px !important;
+        margin-right: 0 !important;
+      }
+
+      .am-list-line {
+        position: relative;
+      }
+
+      .am-input-extra {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 18px;
+        overflow: visible !important;
+
+        .am-icon {
+          color: #ccc !important;
+          position: absolute;
+          top: 14px;
+          right: -2px;
+        }
+
+        .am-switch {
+          position: absolute;
+          top: 17px;
+          right: 0;
+
+          input {
+            padding: 0 !important;
+            width: 30px !important;
+            height: 15px !important;
+          }
+
+          .checkbox {
+            width: 30px !important;
+            height: 15px !important;
+            border-radius: 0 !important;
+            background-color: transparent !important;
+            border-radius: 7.5px !important;
+
+            &::before {
+              width: 30px !important;
+              background-color: #d9d9d9 !important;
+              left: 0 !important;
+              top: 0 !important;
+              height: 15px !important;
+              border-radius: 7.5px !important;
+            }
+
+            &::after {
+              left: 2px !important;
+              top: 1px !important;
+              width: 12px !important;
+              height: 12px !important;
+              border-radius: 50%;
+              box-shadow: 1px #d9d9d9;
+            }
+          }
+
+          input[type=checkbox]:checked + .checkbox:after {
+            transform: translateX(0);
+            left: 16px !important;
+          }
+          input[type=checkbox]:checked + .checkbox::before {
+            background-color: #ff6600 !important;
+            transform: scale(1) !important;
+          }
+        }
+      }
+
+      .am-textarea-item {
+        padding: 0 !important;
+      }
+    }
+
+    .item {
+      border-top: 1px solid #f0f0f0;
+
+      &:first-child {
+        border-top: 0
+      }
+    }
+  }
+}
+
+.icon {
+  display: block;
+  height: 100%;
+  @include bg-img;
+  background-size: 100% auto !important;
+}

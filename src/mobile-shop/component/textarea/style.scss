@@ -1,0 +1,32 @@
+.cb-textarea {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 0 10px !important;
+
+  :global {
+    .am-textarea-item,
+    .cb-div-textarea {
+      height: 30px !important;
+      min-height: 0 !important;
+    }
+    .cb-div-textarea,
+    textarea {
+      font-size: 13px;
+      color: #b3b3b3;
+      line-height: 30px;
+    }
+    .cb-div-textarea:empty:before{
+      content: attr(placeholder);
+      color: #b3b3b3;
+    }
+    .cb-div-textarea:focus:before{
+      content: none;
+    }
+    .am-textarea-control,
+    .am-textarea-item {
+      padding: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.company-page {
+  :global {
+    .video {
+      width: 100% !important;
+      height: 180px !important;
+      border-radius: 0 !important;
+
+      .plyr__control--overlaid {
+        width: 55px !important;
+        height: 55px !important;
+      }
+    }
+
+    .company-msg {
+      // padding: 20px 10px 20px 155px;
+      // height: 175px;
+      padding: 20px 10px 20px 140px;
+      height: 160px;
+      position: relative;
+
+      .img {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        // width: 135px;
+        // height: 135px;
+        width: 120px;
+        height: 120px;
+        border-radius: 4px;
+      }
+
+      .name {
+        color: #333;
+      }
+
+      .other,
+      .address {
+        color: #666;
+      }
+
+      .address,
+      .other {
+        span {
+          display: inline-block;
+          vertical-align: top;
+          width: 60px;
+        }
+      }
+
+      .name,
+      .other {
+        // height: 22.5px;
+        // line-height: 22.5px;
+        height: 20px;
+        line-height: 20px;
+      }
+
+      .address {
+        max-height: 2 * 20px;
+        line-height: 20px;
+      }
+    }
+
+    .company-detail {
+      border-top: 1px solid #eee;
+      padding: 12.5px 10px;
+
+      font-size: 12px;
+      // color: #666;
+      // line-height: 22px;
+
+      img, video {
+        // display: inline-block;
+        // vertical-align: top;
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  }
+}

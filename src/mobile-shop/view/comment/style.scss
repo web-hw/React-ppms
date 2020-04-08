@@ -1,0 +1,39 @@
+.comment {
+  :global {
+    .am-textarea-item {
+      height: 210px;
+      background-color: #f5f5f5;
+    }
+    textarea {
+      font-size: 13px;
+      height: 100%;
+      line-height: 20px;
+      color: #a6a6a6;
+    }
+    .am-textarea-control {
+      padding: 0 !important;
+      height: 100%;
+    }
+  }
+}
+.cmt-btn {
+  height: 30px;
+  border: 1px solid #f5f5f5;
+  background-color: #f5f5f5;
+  :global {
+    .am-button {
+      border-radius: 0;
+      width: 112px;
+      height: 100%;
+      color: #a6a6a6;
+      font-size: 14px;
+      line-height: 30px;
+      &.fr {
+        color: #fb3f3e;
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

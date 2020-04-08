@@ -1,0 +1,15 @@
+.share-bus-card {
+  .item {
+    padding-left: 120px !important;
+  }
+
+  :global {
+    .cb-header {
+      .am-button {
+        background-color: #fb3f3e !important;
+        border-color: transparent !important;
+        color: #fff !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+.pay {
+  background-color: #fff;
+
+  :global {
+    .cb-btn {
+      height: 50px !important;
+      line-height: 50px !important;
+      margin-top: 0 !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      background-color: #ff6600 !important;
+      color: #fff !important;
+      font-size: 15px !important;
+    }
+  }
+}
+
+.title {
+  padding-top: 4px;
+  height: 100px;
+  overflow: hidden;
+
+  h6, p {
+    color: #666;
+  }
+
+  h6, p, div {
+    line-height: 32px;
+    height: 32px;
+  }
+
+  div {
+    color: #333;
+  }
+}
+
+.content {
+  padding: 100px 0 10px;
+}
+
+.item {
+  padding: 20px 0 0 30px;
+  &:last-child p {
+    border-bottom: 0;
+  }
+  em {
+    height: 30px;
+    width: 30px;
+    @include bg-img;
+    &:global(.part) {
+      background-size: 20px auto !important;
+      right: 30px !important;
+    }
+  }
+  h6 {
+    padding-left: 45px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+  }
+  div {
+    padding-right: 65px;
+  }
+
+  p {
+    padding-right: 65px;
+    height: 44px;
+    line-height: 24px;
+    color: #666;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  :global {
+    .price,
+    .recharge {
+      height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+    }
+
+    .price {
+      color: #fb3f3e;
+      font-weight: 700;
+      max-width: 40%;
+    }
+
+    .recharge {
+      padding-left: 10px;
+      max-width: 60%;
+      position: relative;
+      padding-right: 0.5867rem;
+
+      .am-icon {
+        color: #ccc !important;
+        position: absolute;
+        top: 1.5px;
+        right: 0;
+      }
+    }
+
+    .title-content {
+      display: inline-block;
+      max-width: 100%;
+      @include bg-img;
+      background-size: 25px auto !important;
+      background-position: center right !important;
+    }
+
+    .has-tj {
+      padding-right: 30px;
+    }
+  }
+}

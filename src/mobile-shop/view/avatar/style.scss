@@ -1,0 +1,52 @@
+.avatar {
+  background-color: #000;
+
+  :global {
+    .cb-header {
+      color: #fff !important;
+      background-color: transparent;
+      border-bottom-color: transparent;
+      .am-icon {
+        color: #fff !important;
+      }
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.select-avatar-modal {
+  :global {
+    .am-modal-content {
+      background-color: transparent !important;
+      padding: 0 15px 10px !important;
+      box-sizing: border-box;
+    }
+
+    .am-modal-body {
+      width: 100%;
+      height: auto !important;
+    }
+
+    .select-head,
+    .select-cancel {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+
+    .select-item {
+      height: 50px;
+      line-height: 50px;
+      border-top: 1px solid #ccc;
+      font-size: 15px;
+      color: #333;
+
+      &:first-child {
+        border-top-color: transparent;
+      }
+    }
+  }
+}

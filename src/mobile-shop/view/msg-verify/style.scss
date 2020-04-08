@@ -1,0 +1,66 @@
+
+.msg-verify {
+  :global {
+    .del-btn {
+      color: #fff;
+      font-size: 14px;
+      min-width: 60px;
+    }
+    .del-btn {
+      background-color: #fb3f3e
+    }
+    .am-swipe-content {
+      background-color: #fff;
+    }
+    .am-swipe-btn,
+    .am-swipe-actions {
+      top: 1px !important;
+      bottom: 1px !important;
+      height: 58px !important;
+    }
+  }
+}
+
+.msg-item {
+  height: 60px;
+  padding: 13px 70px 13px 54px;
+  // &:last-child {
+  //   border-bottom: 0 !important;
+  // }
+
+  :global {
+    .img {
+      top: 13px;
+      left: 10px;
+      width: 34px;
+      height: 34px;
+    }
+  }
+  span {
+    top: 19px;
+    right: 10px;
+    color: #333;
+    height: 22px;
+    line-height: 22px;
+    text-align: right;
+    width: 50px;
+    border-radius: 3px;
+    &:global(.active) {
+      background-color: #fb3f3e;
+      color: #fff;
+      text-align: center;
+    }
+  }
+
+  h6 {
+    color: #333;
+  }
+  p {
+    color: #999;
+  }
+
+  h6, p {
+    height: 17px;
+    line-height: 17px;
+  }
+}

@@ -1,0 +1,68 @@
+:global {
+  .-mob-share-weixin-qrcode-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1 !important;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 999999;
+  }
+  .-mob-share-weixin-qrcode-content {
+    position: absolute;
+    width: 250px;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    z-index: 9999999;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 10px 10px;
+  }
+  .-mob-share-weixin-qrcode-header {
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  .-mob-share-weixin-qrcode-close {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -20px;
+    padding: 0;
+    border: 1px solid #f0f0f0;
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    color: #fb3f3e;
+    background-color: #fff;
+    font-size: 14px;
+  }
+  .-mob-share-weixin-qrcode {
+    width: 85%;
+  }
+  .cb-guide-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4) url('./guide-icon.png') no-repeat right top;
+    background-size: auto 138px;
+    z-index: 9999999;
+
+    p {
+      margin-top: 138px;
+      padding: 0 20px;
+      line-height: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      text-align: right;
+    }
+  }
+}

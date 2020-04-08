@@ -1,0 +1,132 @@
+.cb-search {
+  padding: 0 !important;
+  height: 30px !important;
+
+  :global {
+    .am-search-input,
+    .am-search-synthetic-ph,
+    input {
+      height: 30px !important;
+    }
+    .am-search-input {
+      border: 1px solid #ddd !important;
+      background-color: #fff !important;
+      box-sizing: border-box !important;
+      border-radius: 15px !important;
+    }
+    input,
+    .am-search-synthetic-ph {
+      line-height: 28px !important;
+      font-size: 12px !important;
+      color: #333 !important;
+    }
+    input {
+      line-height: 14px !important;
+    }
+
+    .am-search-synthetic-ph-placeholder {
+      font-size: 14px !important;
+    }
+
+    .am-search-cancel {
+      background-color: #fff;
+      margin-left: 10px;
+      border-radius: 4px;
+      color: #fb3f3e;
+      font-size: 12px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+    }
+    .am-search-clear {
+      display: none !important;
+    }
+  }
+}
+
+.cb-search-wrap {
+  :global {
+    .cb-header {
+      .am-navbar-title {
+        flex: 5 !important;
+      }
+
+      .tes {
+        width: 100%;
+      }
+
+      .am-search {
+        background-color: transparent !important;
+      }
+
+      .am-search-input {
+        border-color: transparent !important;
+        background-color: #f0f0f0 !important;
+      }
+
+      .am-search-cancel {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.cb-search-wrap-content {
+  background-color: #f0f0f0;
+
+  :global {
+    .cb-his-search,
+    .cb-hot-search {
+      margin-bottom: 5px;
+
+      h6 {
+        font-size: 14px;
+        font-weight: 400;
+        height: 35px;
+        line-height: 15px;
+        box-sizing: border-box;
+        padding: 10px 35px 10px 10px;
+        color: #333;
+        position: relative;
+
+        em {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          width: 25px;
+          height: 15px;
+          @include bg-img;
+          background-position: right center !important;
+          background-size: auto 100% !important;
+        }
+      }
+
+      .search-content {
+        span {
+          display: inline-block;
+          vertical-align: top;
+          border-radius: 12px;
+          height: 24px;
+          line-height: 24px;
+          padding: 0 20px;
+          min-width: 30px;
+          color: #555;
+          font-size: 12px;
+          margin-bottom: 10px;
+          margin-left: 10px;
+          text-align: center;
+          background-color: #f2f2f2;
+        }
+      }
+    }
+
+    .search-empty {
+      position: relative;
+    }
+
+    // .cb-search-content {
+    //   background-color: blue;
+    //   font-size: 12px;
+    // }
+  }
+}

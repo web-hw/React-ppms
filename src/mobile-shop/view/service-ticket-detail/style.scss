@@ -1,0 +1,301 @@
+.service-ticket-detail {
+  background-color: #fafafa;
+  :global {
+    .cb-header {
+      background-color: #323232 !important;
+    }
+    .am-icon,
+    .am-navbar-title {
+      color: #fff !important;
+    }
+  }
+}
+
+.logistic-msg {
+  :global {
+    .item {
+      padding: 10px 0 10px 70px;
+
+      &:last-child,
+      &:first-child {
+        .time::before {
+          height: 50%;
+        }
+      }
+
+      &:first-child .time::before {
+        top: 50%;
+      }
+
+      // 只有一个item时隐藏 竖直线
+      &:last-child:first-child .time::before {
+        display: none;
+      }
+    }
+    .time {
+      width: 55px;
+      height: 100%;
+      position: relative;
+
+      .date {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 40px;
+        line-height: 14px;
+        color: #666;
+        span:last-child {
+          color: #999;
+        }
+      }
+
+      &::before {
+        content: '';
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -.5px;
+        z-index: 10;
+        border-right: 1px solid #f0f0f0;
+      }
+
+      em {
+        z-index: 20;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        background-color: #ccc;
+        transform: translate(50%, -50%);
+
+        &.active {
+          background-color: #ff6600;
+
+          &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset 0 0 3px rgba(255, 102, 0, 0.8);
+          }
+        }
+      }
+    }
+    .content {
+      p {
+        color: #999;
+        line-height: 16px;
+      }
+      h6 {
+        color: #666;
+        line-height: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.header {
+  height: 35px;
+  line-height: 35px;
+  color: #999;
+
+  span span {
+    color: #333;
+    font-weight: 700;
+  }
+
+  :global {
+    .fr {
+      margin-top: 7.5px;
+      width: 70px;
+      height: 20px;
+      line-height: 20px;
+      border: 1px solid #f0f0f0;
+      border-radius: 3px;
+      padding-left: 25px;
+      @include bg-img;
+      background-size: 15px auto !important;
+      background-position: 5px center !important;
+    }
+  }
+}
+
+.title {
+  background-color: #f7f7f7;
+  height: 35px;
+  line-height: 35px;
+  color: #666;
+}
+
+.steps {
+  text-align: center;
+  :global {
+    .am-flexbox-item {
+      margin-left: 0 !important;
+      position: relative;
+      font-size: 12px;
+      line-height: 22px;
+      color: #ff6600;
+      &::after {
+        position: relative;
+        z-index: 10;
+        display: block;
+        content: attr(data-index);
+        margin: 10px auto 0;
+        font-size: 10px;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        line-height: 16px;
+        @include bg-img;
+        background-size: 100% auto !important;
+        background-image: url('../../assets/images/step-act.png')
+      }
+
+      &:first-child::before {
+        display: none;
+      }
+
+      &::before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        bottom: 7px;
+        left: -50%;
+        width: 100%;
+        border-top: 1px solid #ff6600;
+      }
+
+      &.active~.am-flexbox-item {
+        color: #999;
+
+        &::before {
+          border-color: #f0f0f0;
+        }
+
+        &::after {
+          color: #999;
+          background-image: url('../../assets/images/step-def.png')
+        }
+      }
+    }
+  }
+}
+
+.msg {
+  padding: 10px 15px;
+
+  h6 {
+    color: #333;
+    line-height: 16px;
+  }
+
+  :global {
+    .item {
+      height: 33px;
+      line-height: 33px;
+      color: #333;
+
+      span {
+        color: #999;
+      }
+    }
+
+    .am-list-item,
+    .am-list-line,
+    .am-input-label,
+    .am-input-control,
+    input {
+      padding: 0 !important;
+      min-height: 0 !important;
+      height: 25px !important;
+      line-height: 25px !important;
+      box-sizing: border-box;
+      font-size: 12px !important;
+    }
+
+    .am-list-item {
+      width: 270px !important;
+    }
+
+    *::after {
+      display: none !important;
+    }
+
+    .am-list-line {
+      position: relative;
+    }
+
+    .am-input-extra {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30px;
+      height: 25px;
+      max-height: 25px !important;
+      margin: 0 !important;
+
+      em {
+        display: block;
+        height: 100%;
+        @include bg-img;
+        background-size: 10px auto !important;
+      }
+    }
+
+    .am-input-label {
+      width: auto !important;
+      margin-right: 5px !important;
+      color: #999 !important;
+    }
+
+    input {
+      border: 1px solid #f0f0f0 !important;
+      color: #333 !important;
+      padding: 0 30px 0 10px !important;
+      border-radius: 3px !important;
+    }
+
+    .cb-btn {
+      margin: 20px auto 10px !important;
+      width: 150px !important;
+      height: 30px !important;
+      line-height: 30px !important;
+      font-size: 12px !important;
+      border: 0 !important;
+      border-radius: 15px !important;
+      background-color: #ededed !important;
+    }
+  }
+}
+
+.desc {
+  line-height: 20px;
+  color: #333;
+  padding: 12.5px 15px 25px;
+
+  :global {
+    .am-flexbox {
+      font-size: 0;
+      line-height: 0;
+      margin-top: 22px;
+    }
+    .am-flexbox-item {
+      margin-left: 15px !important;
+
+      &:first-child {
+        margin-left: 0 !important;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.his-menu {
+  height: 40px;
+
+  :global {
+    .content {
+      position: relative;
+      padding: 0 40px 0 50px;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #ccc;
+      text-align: center;
+
+      &.active {
+        background-color: #0b559f;
+      }
+
+      .anticon {
+        color: #fff;
+        vertical-align: top;
+        margin-top: 5px;
+        font-size: 20px;
+      }
+    }
+    .prev {
+      left: 0;
+    }
+    .next {
+      right: 0;
+    }
+
+    .his-menu-items {
+      padding-top: 10px;
+      height: 40px;
+      white-space: nowrap;
+      transition: all 300ms;
+
+      span {
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        background-color: rgba(46, 179, 152, .2);
+        border-radius: 15px;
+        text-align: center;
+        width: 90px;
+        margin-right: 10px;
+        padding: 0 10px;
+        box-sizing: border-box;
+        position: relative;
+        cursor: pointer;
+
+        div {
+          width: 100%;
+          height: 100%;
+          line-height: 30px;
+          font-size: 14px;
+          color: #333;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+
+        &.active {
+          background-color: #2eb398;
+          div {
+            color: #fff;
+          }
+        }
+
+        &:hover .anticon {
+          display: inline-block;
+        }
+
+        .anticon {
+          position: absolute;
+          display: none;
+          top: -5px;
+          right: -10px;
+          font-size: 20px;
+          color: #0b559f;
+        }
+      }
+    }
+  }
+}

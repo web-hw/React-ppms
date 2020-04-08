@@ -1,0 +1,42 @@
+.app-share {
+  @include bg-img;
+  background-image: url(../../assets/images/share-app-bg.png);
+  background-size: 100% auto;
+
+  :global {
+    .download-btn {
+      color: #fff;
+      width: 240px;
+      height: 60px;
+      bottom: 25px;
+      left: 50%;
+      margin-left: -120px;
+      line-height: 50px;
+      padding-bottom: 10px;
+      @include bg-img;
+      background-image: url(../../assets/images/share-app-btn.png);
+    }
+
+    .wx-info {
+      background-color: rgba(0, 0, 0, .6);
+    }
+
+    .wx-info-icon {
+      @include bg-img;
+      background-image: url(../../assets/images/weixintips.png);
+      width: 248px;
+      height: 155px;
+      top: 10px;
+      right: 10px;
+      box-sizing: border-box;
+      padding: 80px 25px 0 10px;
+      line-height: 20px;
+      font-size: 14px;
+      color: #ff7800;
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}

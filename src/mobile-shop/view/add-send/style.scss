@@ -1,0 +1,69 @@
+.add-send-msg {
+  padding-left: 85px;
+  height: 86px;
+  :global {
+    .img {
+      left: 10px;
+      top: 15px;
+      width: 56px;
+      height: 56px;
+      border-radius: 8px;
+    }
+  }
+  h6 {
+    color: #333;
+    line-height: 24px;
+  }
+  p {
+    color: #666;
+    line-height: 22px;
+    span:first-child {
+      max-width: 60%;
+    }
+    span:last-child {
+      max-width: 33%;
+      margin-left: 7%;
+    }
+  }
+}
+
+.add-send-content {
+  h6 {
+    color: #333;
+    line-height: 28px;
+  }
+  :global {
+    .am-textarea-item,
+    .am-textarea-control {
+      padding: 0 !important;
+    }
+    textarea {
+      height: 80px;
+      border: 1px solid #f0f0f0;
+      padding: 5px 10px;
+      color: #333;
+      font-size: 12px;
+      line-height: 17px;
+      box-sizing: border-box;
+    }
+    .am-button {
+      background-color: #fb3f3e;
+      color: #fff;
+      height: 30px;
+      line-height: 30px;
+      width: 100px;
+      border-radius: 4px;
+      &::before {
+        display: none;
+      }
+      .am-icon-loading {
+        display: inline-block;
+        vertical-align: top;
+        width: 20px;
+        height: 20px;
+        margin-top: 5px !important;
+        margin-right: 10px !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.find {
+  :global {
+    .am-tabs-default-bar-tab {
+      font-size: 15px !important;
+    }
+    .am-tabs-tab-bar-wrap {
+      padding: 0 !important;
+    }
+    .bus-circle-item-title {
+      padding-left: 55px;
+      border-bottom: 1px dashed #e6e6e6;
+      em {
+        top: 10px;
+        width: 45px;
+        height: 45px;
+        background-color: #f0f0f0;
+        border-radius: 50%;
+        @include bg-img;
+        background-size: 70% auto;
+      }
+      h6 {
+        color: #1a1a1a;
+        line-height: 26px;
+        height: 26px;
+      }
+      p {
+        color: #a6a6a6;
+        line-height: 22px;
+        height: 22px;
+      }
+    }
+  }
+}

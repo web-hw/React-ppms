@@ -1,0 +1,22 @@
+.about-us {
+  :global {
+    .logo {
+      height: auto;
+
+      img {
+        display: inline-block;
+        vertical-align: top;
+        width: 117px;
+        height: auto;
+      }
+    }
+    .content {
+      p {
+        text-indent: 2em;
+        font-size: 12px;
+        line-height: 22px;
+        color: #666;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.empty {
+  :global {
+    .empty-image {
+      img {
+        display: inline-block;
+        vertical-align: top;
+        width: 60px;
+        height: auto;
+      }
+    }
+    .empty-description {
+      color: rgba(0, 0, 0, 0.25);
+      font-size: 14px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+}

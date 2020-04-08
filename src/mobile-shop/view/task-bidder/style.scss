@@ -1,0 +1,38 @@
+.title {
+  height: 30px;
+  line-height: 30px;
+  background-color: #eee;
+}
+
+.bidder {
+  :global {
+    .item {
+      padding: 15px 0 15px 55px;
+      height: 70px;
+      border-top: 1px dashed #f0f0f0;
+
+      &:first-child {
+        border-top: 0;
+      }
+
+      em {
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f0f0f0;
+        @include bg-img;
+      }
+
+      .desc {
+        color: #999;
+        line-height: 20px;
+        height: 20px;
+
+        span {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+}

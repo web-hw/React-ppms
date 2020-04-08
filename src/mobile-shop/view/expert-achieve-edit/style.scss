@@ -1,0 +1,154 @@
+.edit-achieve {
+  padding-bottom: 51px;
+  :global {
+    .cb-btn {
+      padding: 8px 70px;
+      .am-button {
+        height: 35px !important;
+        line-height: 34px !important;
+        color: #fff !important;
+        font-size: 15px !important;
+        border-color: transparent !important;
+        background-color: #fb3f3e !important;
+        margin-top: 0 !important;
+      }
+    }
+
+    .cb-input {
+      margin-top: 0 !important;
+      padding: 0 10px;
+
+      &.tar-input {
+        input {
+          text-align: right;
+        }
+      }
+
+      .am-input-label,
+      input {
+        height: 42px !important;
+        line-height: 42px !important;
+        border: 0 !important;
+      }
+
+      input, textarea {
+        padding-right: 28px !important;
+      }
+
+      .am-input-label,
+      .am-textarea-label {
+        width: 95px !important;
+        // width: 75px !important;
+      }
+
+      .am-list-line {
+        border-bottom: 1px solid #f0f0f0 !important;
+
+        &::after {
+          display: none !important;
+        }
+      }
+
+      .am-input-extra {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 18px;
+        overflow: visible !important;
+
+        .am-icon {
+          color: #ccc !important;
+          position: absolute;
+          top: 10px;
+          right: -2px;
+        }
+      }
+
+      .am-textarea-label {
+        height: 20px !important;
+        line-height: 20px !important;
+      }
+
+      textarea {
+        border: 0 !important;
+        height: 40px !important;
+        line-height: 20px !important;
+      }
+
+      .am-textarea-control {
+        padding: 0 !important;
+      }
+      .am-textarea-item {
+        padding: 10px 0 30px 0 !important;
+        border-bottom: 1px solid #f0f0f0;
+      }
+
+      .am-textarea-count {
+        font-size: 12px !important;
+        height: 15px !important;
+        line-height: 15px !important;
+        bottom: 10px !important;
+        right: 15px !important;
+      }
+
+      .select-file>div {
+        width: 115px;
+        height: 115px;
+        background-color: #f5f5f5;
+
+        @include bg-img;
+      }
+
+      .select-file .mc {
+        width: 90px;
+        font-size: 12px;
+        line-height: 14px;
+        color: #999;
+        text-align: center;
+      }
+
+      .cb-no-border-input {
+        .am-list-line {
+          border-bottom: 0 !important;
+        }
+      }
+
+      .select-file .mc img {
+        display: block;
+        height: 14px;
+        width: auto;
+        margin: 0 auto 15px;
+      }
+
+      .del-file {
+        top: 3px;
+        right: 3px;
+        width: 16px;
+        height: 16px;
+        transform-origin: center center;
+        transform: rotateZ(45deg);
+
+        @include bg-img;
+      }
+    }
+  }
+}
+
+.achieve-type {
+  :global {
+    .am-modal-header,
+    .am-modal-title {
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      color: #333;
+      padding: 0;
+    }
+  }
+}
+
+.achieve-type-content {
+  max-height: 230px;
+}
